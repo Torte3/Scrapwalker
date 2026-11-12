@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0375f50d345c4b7d92561c3affd26556, type: 3}
+  m_Name: SulfuricAcid
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 194be409d48a4c69ac4328fa2408a183
+    Stack: 5
+  _name: "\u786B\u9178"
+  _iconArt: {fileID: -8369199054151325499, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  _dropArt: {fileID: -6711900287727978930, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  _textSprite: 20
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01785f30e5b8430fa0eca837d8765b04, type: 3}
+  m_Name: FinalBoss
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 8e6c1a8aae934f62be74c297b00cac33
+    Speed: 2
+    StopDistance: 10
+    Abilities: []
+  _name: "\u795E\u79D8\u7684\u306A\u91CD\u6A5F"
+  _styles:
+  - {fileID: -3559262250458770636}
+  - {fileID: 695075187433103347}
+  _killed:
+    _clip: {fileID: 8300000, guid: 0a3a015e1e6d4d1c81e49b3a8394d6aa, type: 3}
+    _volumeDecibels: 0
+    _pitchJitter: 0
+    _maxVoices: 2
+--- !u!114 &-3559262250458770636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734b34c94f724d5afcb64a71ee45b89e, type: 3}
+  m_Name: FinalBoss Volley
+  m_EditorClassIdentifier:
+  _definition:
+    ID: 4f371152b0527ad1afc727860f944de9
+  _cue: 3
+  _sounds:
+    _begin:
+      _clip: {fileID: 8300000, guid: 82f2cb1d7ff34ff79b3e51ed915b1610, type: 3}
+      _volumeDecibels: 0
+      _pitchJitter: 0
+      _maxVoices: 0
+    _hit:
+      _clip: {fileID: 0}
+      _volumeDecibels: 0
+      _pitchJitter: 0
+      _maxVoices: 0
+--- !u!114 &695075187433103347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734b34c94f724d5afcb64a71ee45b89e, type: 3}
+  m_Name: FinalBoss ChargedShot
+  m_EditorClassIdentifier:
+  _definition:
+    ID: ea7b4befb3c62ea185bc0988e3a494d9
+  _cue: 2
+  _sounds:
+    _begin:
+      _clip: {fileID: 8300000, guid: 112bc30cdb6b43508aaa6b2927d78b85, type: 3}
+      _volumeDecibels: 0
+      _pitchJitter: 0
+      _maxVoices: 0
+    _hit:
+      _clip: {fileID: 8300000, guid: cf90404428614d6baafb374a81917191, type: 3}
+      _volumeDecibels: 0
+      _pitchJitter: 0
+      _maxVoices: 0

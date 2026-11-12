@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="BuildCard" src="BuildCard.uxml" />
+    <Style src="BuildList.uss" />
+    <ui:VisualElement name="build-list-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="build-band" class="build-band panel hidden">
+            <ui:VisualElement name="build-list" class="build-list">
+                <ui:VisualElement class="build-list__head">
+                    <ui:VisualElement class="build-list__tabs">
+                    <ui:Button name="tab-0" class="btn build-list__tab tab">
+                        <ui:Label name="tab-label" class="build-list__tab-label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="tab-1" class="btn build-list__tab tab">
+                        <ui:Label name="tab-label" class="build-list__tab-label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="tab-2" class="btn build-list__tab tab">
+                        <ui:Label name="tab-label" class="build-list__tab-label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="tab-3" class="btn build-list__tab tab">
+                        <ui:Label name="tab-label" class="build-list__tab-label" picking-mode="Ignore" />
+                    </ui:Button>
+                    </ui:VisualElement>
+                    <ui:Label name="page" class="build-list__page nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement class="build-list__main">
+                    <ui:Button name="back" class="btn build-list__turn">
+                        <ui:VisualElement class="icon icon--tri-left build-list__turn-icon" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:VisualElement class="build-list__cards">
+                        <ui:Instance template="BuildCard" name="card-0" class="build-list__card" />
+                        <ui:Instance template="BuildCard" name="card-1" class="build-list__card" />
+                        <ui:Instance template="BuildCard" name="card-2" class="build-list__card" />
+                        <ui:Instance template="BuildCard" name="card-3" class="build-list__card" />
+                    </ui:VisualElement>
+                    <ui:Button name="next" class="btn build-list__turn">
+                        <ui:VisualElement class="icon icon--tri-right build-list__turn-icon" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

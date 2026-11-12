@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: Scout3
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 789523cb1b48465f8cf70c625fbe203d
+    TypeReference:
+      ID: 366da59dbfea4faab97741883ce83776
+    HP: 30
+    Armor: 0
+    IsBoss: 0
+    AttackMoves: []
+    DropsReference:
+      ID: 065a3254ceb67734b80b9d6ca29f18be
+  _look:
+    _calm: {fileID: -1787556027034313502, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: 5165883830859255808, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: 0}
+    _body: {fileID: -1056921571250521526, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}

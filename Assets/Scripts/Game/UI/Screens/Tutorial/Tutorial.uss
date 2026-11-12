@@ -1,0 +1,111 @@
+.tutorial__dim {
+    --dim-color: rgba(5, 7, 6, 0.62);
+    --focus-dim-color: rgba(5, 7, 6, 0.85);
+}
+
+.tutorial__ring {
+    position: absolute;
+    border-width: 3px;
+    border-color: var(--c-amber);
+    --ring-color: var(--c-amber);
+    --ring-bright-color: #ffd28a;
+}
+
+.tutorial__talk {
+    position: absolute;
+    width: 832px;
+    height: 200px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--c-line);
+    background-color: var(--c-window-fill);
+}
+
+.tutorial__talk--middle {
+    left: 50%;
+    margin-left: -416px;
+    top: 305px;
+}
+
+.tutorial__talk--low {
+    left: 50%;
+    margin-left: -416px;
+    top: var(--low-talk-top);
+}
+
+.tutorial__talk--hint {
+    width: 560px;
+    height: 104px;
+}
+
+.tutorial__talk--hint .tutorial__face {
+    left: 18px;
+    top: 18px;
+    width: 68px;
+    height: 68px;
+}
+
+.tutorial__talk--hint .tutorial__speaker {
+    left: 104px;
+    top: 16px;
+    font-size: 13px;
+}
+
+.tutorial__talk--hint .tutorial__text {
+    left: 104px;
+    top: 42px;
+    bottom: 12px;
+    font-size: 16px;
+}
+
+.tutorial__corners .corner {
+    width: 30px;
+    height: 30px;
+}
+
+.tutorial__face {
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    width: 144px;
+    height: 144px;
+    --face-outer: #050807;
+    --face-case: #2b3036;
+    --face-screen: #071510;
+    --face-stand: #4a545d;
+    --face-eye: var(--c-ok);
+    --face-glitch: var(--c-warn);
+}
+
+.tutorial__speaker {
+    position: absolute;
+    left: 198px;
+    right: 28px;
+    top: 28px;
+    height: 24px;
+    font-size: 17.6px;
+    -unity-font-style: bold;
+    color: var(--c-ok);
+}
+
+.tutorial__text {
+    position: absolute;
+    left: 198px;
+    right: 28px;
+    top: 60px;
+    bottom: 50px;
+    font-size: 22.4px;
+    color: #eef0ea;
+}
+
+.tutorial__next {
+    position: absolute;
+    left: 198px;
+    right: 28px;
+    bottom: 22px;
+    height: 24px;
+    font-size: 16px;
+    color: var(--c-amber);
+    -unity-text-align: lower-right;
+}
+

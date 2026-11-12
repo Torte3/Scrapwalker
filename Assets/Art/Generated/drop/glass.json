@@ -1,0 +1,28 @@
+{
+ "name": "drop/glass",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -5.857142857142858,
+     "y": -4.714285714285715,
+     "w": 82,
+     "h": 74
+    }
+   ]
+  }
+ ]
+}

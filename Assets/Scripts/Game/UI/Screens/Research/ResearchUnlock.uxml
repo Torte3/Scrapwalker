@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="research-unlock" picking-mode="Ignore">
+        <ui:Label name="unlock-kind" class="research-unlock__kind nowrap" picking-mode="Ignore" />
+        <ui:Label name="unlock-name" class="research-unlock__name nowrap" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

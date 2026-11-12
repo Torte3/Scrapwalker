@@ -1,0 +1,54 @@
+{
+ "name": "fx/shot-line",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "tint",
+    "of": "兵器の色。太さ＝w×3.5、濃さ .35"
+   },
+   "ctlText": "{\"kind\":\"tint\",\"of\":\"兵器の色。太さ＝w×3.5、濃さ .35\"}",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "glow.png",
+     "t": 0,
+     "x": -3.6666666666666665,
+     "y": -3.6666666666666665,
+     "w": 322,
+     "h": 22
+    }
+   ]
+  },
+  {
+   "name": "core",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "tint",
+    "of": "兵器の色（電撃は #dafbff）。太さ＝w"
+   },
+   "ctlText": "{\"kind\":\"tint\",\"of\":\"兵器の色（電撃は #dafbff）。太さ＝w\"}",
+   "frames": [
+    {
+     "file": "core.png",
+     "t": 0,
+     "x": -1,
+     "y": -1,
+     "w": 306,
+     "h": 6
+    }
+   ]
+  }
+ ]
+}

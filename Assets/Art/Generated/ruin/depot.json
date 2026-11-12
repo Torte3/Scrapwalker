@@ -1,0 +1,38 @@
+{
+ "name": "ruin/depot",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 706,
+     "y": 340,
+     "w": 2262,
+     "h": 1080
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

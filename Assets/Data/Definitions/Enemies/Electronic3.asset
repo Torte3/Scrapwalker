@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: Electronic3
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: bd0f2d0447374d8996703d3b46a13cc8
+    TypeReference:
+      ID: 8efe46b9e81c4a2a8493b0f1da1e222b
+    HP: 46
+    Armor: 0
+    IsBoss: 0
+    AttackMoves:
+    - StyleReference:
+        ID: 0adcea7a79542828a4d04ab645e7a43a
+      Shots: 1
+      HasOneTarget: 0
+      Damage: 5
+      ImpactSeconds: 0
+      GapSeconds: 0
+      TailSeconds: 0
+      RestSeconds: 1.5
+      Weight: 0
+    DropsReference:
+      ID: 3462a59b729140d47a6fba568e92f097
+  _look:
+    _calm: {fileID: 3141412025107919392, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: -8864944116985779692, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: 0}
+    _body: {fileID: 2525527891542260692, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}

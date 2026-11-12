@@ -1,0 +1,28 @@
+{
+ "name": "bg/morning/city-skyline",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": 0,
+     "y": 454.66666666666663,
+     "w": 5100,
+     "h": 355
+    }
+   ]
+  }
+ ]
+}

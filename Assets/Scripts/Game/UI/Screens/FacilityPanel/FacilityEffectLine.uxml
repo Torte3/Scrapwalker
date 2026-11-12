@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="room-yield__entry" picking-mode="Ignore">
+        <ui:VisualElement class="room-yield__line" picking-mode="Ignore">
+            <ui:VisualElement class="icon icon--depart room-yield__arrow" picking-mode="Ignore" />
+            <ui:Label name="effect" class="room-yield__effect" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Label name="effect-note" class="room-yield__effect-note" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

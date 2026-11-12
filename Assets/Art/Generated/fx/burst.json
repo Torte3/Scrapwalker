@@ -1,0 +1,29 @@
+{
+ "name": "fx/burst",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -50,
+     "y": -50,
+     "w": 300,
+     "h": 300
+    }
+   ]
+  }
+ ]
+}

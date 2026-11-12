@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="mat" class="mat" picking-mode="Ignore">
+        <ui:Label name="mat-name" class="mat__name nowrap" picking-mode="Ignore" />
+        <ui:Label name="mat-need" class="mat__need bold nowrap" picking-mode="Ignore" />
+        <ui:Label name="mat-have" class="mat__have dim nowrap" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

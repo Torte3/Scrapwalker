@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Blackout.uss" />
+    <ui:VisualElement name="blackout-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="blackout" class="layer blackout hidden" />
+        <ui:VisualElement class="defeat__field" picking-mode="Ignore">
+            <ui:VisualElement name="defeat-line" class="defeat__band hidden" picking-mode="Ignore">
+                <ui:Label name="defeat-text" class="defeat__text nowrap" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

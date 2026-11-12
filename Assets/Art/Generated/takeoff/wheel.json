@@ -1,0 +1,49 @@
+{
+ "name": "takeoff/wheel",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "tire",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "tire.png",
+     "t": 0,
+     "x": -18,
+     "y": -18,
+     "w": 108,
+     "h": 108
+    }
+   ]
+  },
+  {
+   "name": "spokes",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "angle": "走った距離 ÷ 18"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"angle\":\"走った距離 ÷ 18\"}",
+   "frames": [
+    {
+     "file": "spokes.png",
+     "t": 0,
+     "x": -8.666666666666666,
+     "y": -13.666666666666668,
+     "w": 71,
+     "h": 82
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+.save .window {
+    width: 800px;
+    height: 392px;
+}
+
+.save__rows {
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.save__foot {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    height: 38px;
+    margin-top: 6px;
+}
+
+.save .save__start {
+    width: 140px;
+    height: 38px;
+    font-size: 14px;
+    --btn-edge: var(--c-warn);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--c-warn);
+}
+
+.save-row {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    height: 56px;
+    padding: 8px 11px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.save-row.dash-frame {
+    border-width: 1px;
+    -unity-background-image-tint-color: var(--c-line);
+}
+
+.save-row--saved {
+    border-color: var(--c-line);
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+.save-row__stripe {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    bottom: -1px;
+    width: 3px;
+    background-color: var(--c-cyan);
+}
+
+.save-row__name {
+    flex-shrink: 0;
+    width: 84px;
+    margin-right: 12px;
+    font-size: 13px;
+    -unity-text-align: middle-left;
+}
+
+.save-row__star {
+    flex-shrink: 0;
+    width: 16px;
+    margin-right: 8px;
+    font-size: 15px;
+    color: var(--c-amber);
+    -unity-text-align: middle-center;
+}
+
+.save-row__info {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+}
+
+.save-row__meta {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.save-row__cell {
+    flex-shrink: 0;
+    flex-direction: row;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.save-row__cell--saved-at { width: 86px; }
+.save-row__cell--ruin { width: 130px; overflow: hidden; text-overflow: ellipsis; }
+.save-row__cell--play { width: 86px; margin-right: 0; }
+
+.save-row__value {
+    margin-left: 4px;
+}
+
+.save-row__note {
+    flex-grow: 1;
+    font-size: 13px;
+}
+
+.save-row__note--asking {
+    color: var(--c-amber);
+}
+
+.save-row .save-row__btn {
+    width: 72px;
+    height: 38px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.save-row .save-row__btn--amber,
+.save-row .save-row__btn--amber-bold {
+    --btn-edge: var(--c-amber);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--c-amber);
+}
+
+.save-row .save-row__btn--amber-bold {
+    -unity-font-style: bold;
+}
+
+.save-row .save-row__btn--danger {
+    --btn-edge: var(--c-warn);
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--c-warn);
+}

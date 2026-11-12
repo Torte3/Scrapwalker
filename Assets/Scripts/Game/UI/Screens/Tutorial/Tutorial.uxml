@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Corners" src="../../Widgets/Corners.uxml" />
+    <Style src="Tutorial.uss" />
+    <ui:VisualElement name="tutorial" class="layer tutorial invisible" picking-mode="Ignore">
+        <Scrapwalker.Game.UI.Screens.Tutorial.SpotlightDim name="dim" class="layer tutorial__dim" />
+        <ui:VisualElement name="ring" class="tutorial__ring hidden" picking-mode="Ignore" />
+        <ui:VisualElement name="talk" class="tutorial__talk tutorial__talk--middle invisible" picking-mode="Ignore">
+            <ui:Instance template="Corners" class="corners-host tutorial__corners" picking-mode="Ignore" />
+            <Scrapwalker.Game.UI.Screens.Tutorial.AIFaceView name="face" class="tutorial__face" picking-mode="Ignore" />
+            <ui:Label name="speaker" class="tutorial__speaker nowrap" picking-mode="Ignore" />
+            <ui:Label name="text" class="tutorial__text" picking-mode="Ignore" />
+            <ui:Label name="next" class="tutorial__next nowrap" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

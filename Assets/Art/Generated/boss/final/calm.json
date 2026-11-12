@@ -1,0 +1,527 @@
+{
+ "name": "boss/final/calm",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "dust",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "puffs",
+    "when": "move",
+    "puffs": [
+     12,
+     56
+    ],
+    "at": [
+     56.933,
+     -3.253
+    ],
+    "drift": [
+     56.933,
+     -17.893
+    ],
+    "spread": [
+     32.533,
+     -21.147
+    ],
+    "size": [
+     4.067,
+     13.013,
+     8.133
+    ],
+    "color": "#7a6e56",
+    "alpha": 0.38
+   },
+   "ctlText": "{\"kind\":\"puffs\",\"when\":\"move\",\"puffs\":[12,56],\"at\":[56.933,-3.253],\"drift\":[56.933,-17.893],\"spread\":[32.533,-21.147],\"size\":[4.067,13.013,8.133],\"color\":\"#7a6e56\",\"alpha\":0.38}",
+   "frames": [
+    null
+   ]
+  },
+  {
+   "name": "wing-back",
+   "anim": {
+    "mode": "value",
+    "values": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "ctl": {
+    "kind": "value",
+    "parent": "upper",
+    "when": "volley",
+    "open": [
+     0,
+     9,
+     -12,
+     0
+    ]
+   },
+   "ctlText": "{\"kind\":\"value\",\"parent\":\"upper\",\"when\":\"volley\",\"open\":[0,9,-12,0]}",
+   "frames": [
+    {
+     "file": "wing-back_0.png",
+     "t": 0,
+     "v": 0,
+     "x": 11.53366666666659,
+     "y": -191.7333333333333,
+     "w": 358,
+     "h": 352
+    },
+    {
+     "file": "wing-back_1.png",
+     "t": 0,
+     "v": 1,
+     "x": 11.53366666666659,
+     "y": -194.39999999999998,
+     "w": 362,
+     "h": 360
+    },
+    {
+     "file": "wing-back_2.png",
+     "t": 0,
+     "v": 2,
+     "x": 11.53366666666659,
+     "y": -197.06666666666666,
+     "w": 363,
+     "h": 368
+    },
+    {
+     "file": "wing-back_3.png",
+     "t": 0,
+     "v": 3,
+     "x": 11.53366666666659,
+     "y": -199.39999999999998,
+     "w": 360,
+     "h": 375
+    },
+    {
+     "file": "wing-back_4.png",
+     "t": 0,
+     "v": 4,
+     "x": 11.53366666666659,
+     "y": -204.06666666666666,
+     "w": 353,
+     "h": 389
+    }
+   ]
+  },
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "upper",
+    "when": "rail",
+    "pivot": [
+     0,
+     -50.427
+    ],
+    "lean": -0.05,
+    "recoil": [
+     0.06,
+     26
+    ],
+    "bump": [
+     0.895,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"upper\",\"when\":\"rail\",\"pivot\":[0,-50.427],\"lean\":-0.05,\"recoil\":[0.06,26],\"bump\":[0.895,0.21]}",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -38.13300000000004,
+     "y": -177.39999999999998,
+     "w": 234,
+     "h": 427
+    }
+   ]
+  },
+  {
+   "name": "chest",
+   "anim": {
+    "mode": "trigger",
+    "length": 642,
+    "frames": 1
+   },
+   "ctl": {
+    "kind": "trigger",
+    "parent": "upper",
+    "when": "rail"
+   },
+   "ctlText": "{\"kind\":\"trigger\",\"parent\":\"upper\",\"when\":\"rail\"}",
+   "frames": [
+    null
+   ]
+  },
+  {
+   "name": "track",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "track.png",
+     "t": 0,
+     "x": -84.79966666666667,
+     "y": -70.39999999999998,
+     "w": 509,
+     "h": 212
+    }
+   ]
+  },
+  {
+   "name": "tread",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "tread.png",
+     "t": 0,
+     "x": -84.13300000000004,
+     "y": -67.73333333333332,
+     "w": 504,
+     "h": 201
+    }
+   ]
+  },
+  {
+   "name": "track-pit",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "track-pit.png",
+     "t": 0,
+     "x": -76.46633333333341,
+     "y": -60.39999999999998,
+     "w": 459,
+     "h": 157
+    }
+   ]
+  },
+  {
+   "name": "wheels",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "wheels.png",
+     "t": 0,
+     "x": -75.79966666666667,
+     "y": -30.066666666666634,
+     "w": 455,
+     "h": 64
+    }
+   ]
+  },
+  {
+   "name": "track-front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "track-front.png",
+     "t": 0,
+     "x": -56.13300000000004,
+     "y": -59.39999999999998,
+     "w": 337,
+     "h": 127
+    }
+   ]
+  },
+  {
+   "name": "sprocket",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move",
+    "bump": [
+     0.268,
+     0.21
+    ]
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\",\"bump\":[0.268,0.21]}",
+   "frames": [
+    {
+     "file": "sprocket.png",
+     "t": 0,
+     "x": -14.133000000000038,
+     "y": -62.73333333333332,
+     "w": 84,
+     "h": 83
+    }
+   ]
+  },
+  {
+   "name": "arm",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "parent": "upper",
+    "when": "rail",
+    "pivot": [
+     -2.44,
+     -160.227
+    ],
+    "rest": 0,
+    "open": [
+     0,
+     8,
+     -14,
+     -4
+    ],
+    "turn": -0.5
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"parent\":\"upper\",\"when\":\"rail\",\"pivot\":[-2.44,-160.227],\"rest\":0,\"open\":[0,8,-14,-4],\"turn\":-0.5}",
+   "frames": [
+    {
+     "file": "arm.png",
+     "t": 0,
+     "x": -34.46633333333341,
+     "y": -166.7333333333333,
+     "w": 116,
+     "h": 279
+    }
+   ]
+  },
+  {
+   "name": "wing-front",
+   "anim": {
+    "mode": "value",
+    "values": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "ctl": {
+    "kind": "value",
+    "parent": "upper",
+    "when": "volley",
+    "open": [
+     0,
+     9,
+     -12,
+     0
+    ],
+    "pods": 4
+   },
+   "ctlText": "{\"kind\":\"value\",\"parent\":\"upper\",\"when\":\"volley\",\"open\":[0,9,-12,0],\"pods\":4}",
+   "frames": [
+    {
+     "file": "wing-front_0.png",
+     "t": 0,
+     "v": 0,
+     "x": 7.533666666666591,
+     "y": -198.39999999999998,
+     "w": 341,
+     "h": 366
+    },
+    {
+     "file": "wing-front_1.png",
+     "t": 0,
+     "v": 1,
+     "x": 7.533666666666591,
+     "y": -208.73333333333332,
+     "w": 331,
+     "h": 397
+    },
+    {
+     "file": "wing-front_2.png",
+     "t": 0,
+     "v": 2,
+     "x": 7.533666666666591,
+     "y": -218.39999999999998,
+     "w": 318,
+     "h": 426
+    },
+    {
+     "file": "wing-front_3.png",
+     "t": 0,
+     "v": 3,
+     "x": 7.533666666666591,
+     "y": -227.73333333333332,
+     "w": 310,
+     "h": 454
+    },
+    {
+     "file": "wing-front_4.png",
+     "t": 0,
+     "v": 4,
+     "x": 7.533666666666591,
+     "y": -236.06666666666663,
+     "w": 306,
+     "h": 479
+    },
+    {
+     "file": "wing-front_5.png",
+     "t": 0,
+     "v": 5,
+     "x": 7.533666666666591,
+     "y": -236.06666666666663,
+     "w": 306,
+     "h": 479
+    },
+    {
+     "file": "wing-front_6.png",
+     "t": 0,
+     "v": 6,
+     "x": 7.533666666666591,
+     "y": -236.06666666666663,
+     "w": 306,
+     "h": 479
+    },
+    {
+     "file": "wing-front_7.png",
+     "t": 0,
+     "v": 7,
+     "x": 7.533666666666591,
+     "y": -236.06666666666663,
+     "w": 306,
+     "h": 479
+    },
+    {
+     "file": "wing-front_8.png",
+     "t": 0,
+     "v": 8,
+     "x": 7.533666666666591,
+     "y": -236.06666666666663,
+     "w": 306,
+     "h": 479
+    }
+   ]
+  },
+  {
+   "name": "head",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "parent": "upper"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"parent\":\"upper\"}",
+   "frames": [
+    {
+     "file": "head.png",
+     "t": 0,
+     "x": -19.46633333333341,
+     "y": -211.39999999999998,
+     "w": 103,
+     "h": 113
+    }
+   ]
+  },
+  {
+   "name": "halo",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "parent": "upper"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"parent\":\"upper\"}",
+   "frames": [
+    {
+     "file": "halo.png",
+     "t": 0,
+     "x": -24.46633333333341,
+     "y": -233.39999999999998,
+     "w": 147,
+     "h": 48
+    }
+   ]
+  },
+  {
+   "name": "gun",
+   "anim": {
+    "mode": "trigger",
+    "length": 642,
+    "frames": 1
+   },
+   "ctl": {
+    "kind": "trigger",
+    "parent": "upper",
+    "when": "rail"
+   },
+   "ctlText": "{\"kind\":\"trigger\",\"parent\":\"upper\",\"when\":\"rail\"}",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

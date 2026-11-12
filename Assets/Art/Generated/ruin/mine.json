@@ -1,0 +1,38 @@
+{
+ "name": "ruin/mine",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 650,
+     "y": 291.3333333333333,
+     "w": 2850,
+     "h": 1226
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

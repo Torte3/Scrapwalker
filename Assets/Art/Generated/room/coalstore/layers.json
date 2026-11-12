@@ -1,0 +1,73 @@
+{
+ "name": "room/coalstore/layers",
+ "scale": 7,
+ "origin": [
+  54,
+  618
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "base",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "base.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 378,
+     "h": 378
+    }
+   ]
+  },
+  {
+   "name": "stock",
+   "anim": {
+    "mode": "value",
+    "values": [
+     0,
+     1,
+     10
+    ]
+   },
+   "ctl": {
+    "kind": "value",
+    "of": "石炭の数：0／1〜9／10以上"
+   },
+   "ctlText": "{\"kind\":\"value\",\"of\":\"石炭の数：0／1〜9／10以上\"}",
+   "frames": [
+    {
+     "file": "stock_0.png",
+     "t": 0,
+     "v": 0,
+     "x": 6,
+     "y": 35,
+     "w": 319,
+     "h": 119
+    },
+    {
+     "file": "stock_1.png",
+     "t": 0,
+     "v": 1,
+     "x": 6,
+     "y": 35,
+     "w": 319,
+     "h": 119
+    },
+    {
+     "file": "stock_2.png",
+     "t": 0,
+     "v": 10,
+     "x": 6,
+     "y": 35,
+     "w": 319,
+     "h": 119
+    }
+   ]
+  }
+ ]
+}

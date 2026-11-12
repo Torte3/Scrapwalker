@@ -1,0 +1,49 @@
+{
+ "name": "fx/inbound-chunk",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -14.333333333333334,
+     "y": -12,
+     "w": 89,
+     "h": 72
+    }
+   ]
+  },
+  {
+   "name": "mark",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "tint",
+    "of": "品質の色"
+   },
+   "ctlText": "{\"kind\":\"tint\",\"of\":\"品質の色\"}",
+   "frames": [
+    {
+     "file": "mark.png",
+     "t": 0,
+     "x": -4,
+     "y": -2.666666666666666,
+     "w": 15,
+     "h": 11
+    }
+   ]
+  }
+ ]
+}

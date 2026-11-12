@@ -1,0 +1,38 @@
+{
+ "name": "ruin/robo",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 700,
+     "y": 352,
+     "w": 1920,
+     "h": 1044
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "name": "ruin/smelter",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 712,
+     "y": 77,
+     "w": 2112,
+     "h": 1905
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

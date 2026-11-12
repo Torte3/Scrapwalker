@@ -1,0 +1,51 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="QualityFilterIcon" src="../../Widgets/QualityFilters/QualityFilterIcon.uxml" />
+    <ui:Template name="QualityFilterEditor" src="../../Widgets/QualityFilters/QualityFilterEditor.uxml" />
+    <ui:Template name="FacilityEffectLine" src="FacilityEffectLine.uxml" />
+    <ui:VisualElement name="recipe" class="room-recipe">
+        <ui:VisualElement name="recipe-head" class="room-recipe__head">
+            <ui:VisualElement name="recipe-mark" class="icon icon--tri-right room-recipe__mark" picking-mode="Ignore" />
+            <ui:Label name="recipe-title" class="room-recipe__title bold nowrap" picking-mode="Ignore" />
+            <ui:Label name="recipe-time" class="room-recipe__time dim nowrap" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Label name="recipe-note" class="room-recipe__note warn" picking-mode="Ignore" />
+        <ui:VisualElement name="recipe-body" class="room-recipe__body room-stack-8">
+            <ui:VisualElement class="room-recipe__text">
+                <ui:VisualElement name="recipe-mats" class="room-mats mats--large" />
+                <ui:VisualElement name="recipe-yield" class="room-yield" picking-mode="Ignore">
+                    <ui:VisualElement class="icon icon--depart room-yield__arrow" picking-mode="Ignore" />
+                    <ui:Label name="yield-name" class="room-yield__name nowrap" picking-mode="Ignore" />
+                    <ui:Label name="yield-count" class="room-yield__count bold nowrap" picking-mode="Ignore" />
+                    <ui:VisualElement class="room-spacer" picking-mode="Ignore" />
+                    <ui:Label name="yield-held" class="room-yield__held nowrap" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement name="recipe-effects" class="room-yield room-yield--effects" picking-mode="Ignore">
+                    <ui:Instance template="FacilityEffectLine" name="effect-template" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:Label name="recipe-reject" class="room-recipe__reject warn" />
+            </ui:VisualElement>
+            <ui:VisualElement name="recipe-times" class="room-recipe__times">
+                <ui:Label name="recipe-times-key" class="room-recipe__times-key room-recipe__counter dim nowrap" />
+                <ui:Button name="recipe-fewer" class="btn room-tiny room-recipe__counter">
+                    <ui:Label name="recipe-fewer-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Label name="recipe-count" class="room-recipe__count room-recipe__counter bold nowrap" />
+                <ui:Button name="recipe-more" class="btn room-tiny room-recipe__counter">
+                    <ui:Label name="recipe-more-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:VisualElement class="room-spacer" picking-mode="Ignore" />
+                <ui:Instance template="QualityFilterIcon" name="recipe-filter" class="room-filter-icon" />
+            </ui:VisualElement>
+            <ui:Instance template="QualityFilterEditor" name="recipe-filter-editor" />
+            <ui:VisualElement name="recipe-acts" class="room-recipe__acts">
+                <ui:Button name="recipe-once" class="btn room-act room-act--once btn--accent-cyan">
+                    <ui:Label name="recipe-once-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="recipe-repeat" class="btn room-act btn--accent-amber">
+                    <ui:Label name="recipe-repeat-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="recipe-dash" class="room-dash" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

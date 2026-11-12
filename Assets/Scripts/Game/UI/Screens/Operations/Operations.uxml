@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Corners" src="../../Widgets/Corners.uxml" />
+    <Style src="Operations.uss" />
+    <ui:VisualElement name="operations" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="ops-panel" class="ops panel">
+            <ui:VisualElement name="ops-left" class="ops__side">
+                <ui:Button name="build" class="btn ops-primary ops-primary--amber gradient">
+                    <ui:Instance template="Corners" class="corners-host ops-primary__corners" picking-mode="Ignore" />
+                    <ui:VisualElement class="icon icon--build ops-primary__icon" picking-mode="Ignore" />
+                    <ui:Label name="build-label" class="ops-primary__label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="close-build" class="btn ops-primary ops-primary--plain gradient hidden">
+                    <ui:Instance template="Corners" class="corners-host ops-primary__corners" picking-mode="Ignore" />
+                    <ui:VisualElement class="icon icon--close ops-primary__icon" picking-mode="Ignore" />
+                    <ui:Label name="close-build-label" class="ops-primary__label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement name="ops-center" class="ops__center">
+                <ui:VisualElement class="ops__row ops__row--time">
+                    <ui:Button name="pause" class="btn ops-small ops-small--time gradient">
+                        <ui:VisualElement class="icon icon--pause ops-small__icon ops-small__icon--alone" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="normal" class="btn ops-small ops-small--time gradient">
+                        <ui:VisualElement class="icon icon--play ops-small__icon ops-small__icon--alone" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="fast" class="btn ops-small ops-small--time gradient">
+                        <ui:VisualElement name="fast-icon" class="icon icon--fast ops-small__icon ops-small__icon--alone" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement class="ops__row ops__row--sub">
+                    <ui:Button name="stock" class="btn ops-small ops-small--sub gradient">
+                        <ui:VisualElement class="icon icon--stock ops-small__icon" picking-mode="Ignore" />
+                        <ui:Label name="stock-label" class="ops-small__label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="bots" class="btn ops-small ops-small--sub gradient">
+                        <ui:VisualElement class="icon icon--bots ops-small__icon" picking-mode="Ignore" />
+                        <ui:Label name="bots-label" class="ops-small__label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="settings" class="btn ops-small ops-small--sub gradient">
+                        <ui:VisualElement class="icon icon--settings ops-small__icon" picking-mode="Ignore" />
+                        <ui:Label name="settings-label" class="ops-small__label" picking-mode="Ignore" />
+                    </ui:Button>
+                    <ui:Button name="menu" class="btn ops-small ops-small--sub gradient">
+                        <ui:VisualElement class="icon icon--menu ops-small__icon" picking-mode="Ignore" />
+                        <ui:Label name="menu-label" class="ops-small__label" picking-mode="Ignore" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ops-right" class="ops__side">
+                <ui:Button name="act" class="btn ops-primary ops-primary--amber gradient">
+                    <ui:Instance template="Corners" class="corners-host ops-primary__corners" picking-mode="Ignore" />
+                    <ui:VisualElement name="act-icon" class="icon icon--depart ops-primary__icon" picking-mode="Ignore" />
+                    <ui:Label name="act-label" class="ops-primary__label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

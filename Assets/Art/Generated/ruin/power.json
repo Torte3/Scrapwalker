@@ -1,0 +1,45 @@
+{
+ "name": "ruin/power",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 716,
+     "y": 172,
+     "w": 2652,
+     "h": 1584
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "front.png",
+     "t": 0,
+     "x": 850.3333333333334,
+     "y": 467.3333333333333,
+     "w": 45,
+     "h": 357
+    }
+   ]
+  }
+ ]
+}

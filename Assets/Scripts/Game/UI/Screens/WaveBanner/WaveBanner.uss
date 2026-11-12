@@ -1,0 +1,218 @@
+.wave-banner {
+    --c-wave-red: rgb(224, 70, 50);
+    --c-launch: rgb(110, 215, 255);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--top-height);
+    bottom: var(--bottom-height);
+}
+
+.wave-banner--held .wave-banner__warn-only,
+.wave-banner--cleared .wave-banner__warn-only,
+.wave-banner--launch .wave-banner__warn-only {
+    display: none;
+}
+
+.wave-banner--warn .wave-banner__launch-only,
+.wave-banner--held .wave-banner__launch-only,
+.wave-banner--cleared .wave-banner__launch-only {
+    display: none;
+}
+
+.wave-banner--warn .wave-banner__calm-only {
+    display: none;
+}
+
+.wave-banner__edge-glow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wave-banner__glow-side {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.wave-banner__glow {
+    position: absolute;
+    background-color: rgba(224, 70, 50, 0.07);
+}
+
+.wave-banner__glow--left { left: 0; top: 0; bottom: 0; }
+.wave-banner__glow--right { right: 0; top: 0; bottom: 0; }
+.wave-banner__glow--top { left: 0; right: 0; top: 0; }
+.wave-banner__glow--bottom { left: 0; right: 0; bottom: 0; }
+.wave-banner__glow--left.wave-banner__glow--0, .wave-banner__glow--right.wave-banner__glow--0 { width: 70px; }
+.wave-banner__glow--top.wave-banner__glow--0, .wave-banner__glow--bottom.wave-banner__glow--0 { height: 35px; }
+.wave-banner__glow--left.wave-banner__glow--1, .wave-banner__glow--right.wave-banner__glow--1 { width: 58.33px; }
+.wave-banner__glow--top.wave-banner__glow--1, .wave-banner__glow--bottom.wave-banner__glow--1 { height: 29.17px; }
+.wave-banner__glow--left.wave-banner__glow--2, .wave-banner__glow--right.wave-banner__glow--2 { width: 46.67px; }
+.wave-banner__glow--top.wave-banner__glow--2, .wave-banner__glow--bottom.wave-banner__glow--2 { height: 23.33px; }
+.wave-banner__glow--left.wave-banner__glow--3, .wave-banner__glow--right.wave-banner__glow--3 { width: 35px; }
+.wave-banner__glow--top.wave-banner__glow--3, .wave-banner__glow--bottom.wave-banner__glow--3 { height: 17.5px; }
+.wave-banner__glow--left.wave-banner__glow--4, .wave-banner__glow--right.wave-banner__glow--4 { width: 23.33px; }
+.wave-banner__glow--top.wave-banner__glow--4, .wave-banner__glow--bottom.wave-banner__glow--4 { height: 11.67px; }
+.wave-banner__glow--left.wave-banner__glow--5, .wave-banner__glow--right.wave-banner__glow--5 { width: 11.67px; }
+.wave-banner__glow--top.wave-banner__glow--5, .wave-banner__glow--bottom.wave-banner__glow--5 { height: 5.83px; }
+
+.wave-banner__hazard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(14, 13, 11, 0.92);
+    overflow: hidden;
+}
+
+.wave-banner__stripes {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/Assets/Art/UI/hazard.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    -unity-background-image-tint-color: var(--c-wave-red);
+}
+
+.wave-banner__hazard--edge-top {
+    top: 0;
+    height: 12px;
+}
+
+.wave-banner__hazard--edge-bottom {
+    bottom: 0;
+    height: 12px;
+}
+
+.wave-banner__hazard--edge-top > .wave-banner__stripes,
+.wave-banner__hazard--edge-bottom > .wave-banner__stripes {
+    left: -28.8px;
+    background-size: 28.8px 12px;
+}
+
+.wave-banner__hazard--band-top {
+    top: -69px;
+    height: 10px;
+}
+
+.wave-banner__hazard--band-bottom {
+    top: 59px;
+    height: 10px;
+}
+
+.wave-banner__hazard--band-top > .wave-banner__stripes,
+.wave-banner__hazard--band-bottom > .wave-banner__stripes {
+    left: -24px;
+    background-size: 24px 10px;
+}
+
+.wave-banner__center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 0;
+    margin-top: -30px;
+}
+
+.wave-banner__band-group {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0;
+}
+
+.wave-banner__band {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -59px;
+    height: 118px;
+    background-color: rgba(8, 9, 8, 0.82);
+}
+
+.wave-banner__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--c-ok);
+}
+
+.wave-banner__line--top {
+    top: -62px;
+}
+
+.wave-banner__line--bottom {
+    top: 59px;
+}
+
+.wave-banner__texts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0;
+}
+
+.wave-banner__label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    font-size: 15px;
+    -unity-font-style: bold;
+    -unity-text-align: lower-center;
+    color: var(--c-ok);
+    opacity: 0.9;
+}
+
+.wave-banner__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -26px;
+    font-size: 44px;
+    -unity-font-style: bold;
+    -unity-text-align: lower-center;
+    color: var(--c-ok);
+}
+
+.wave-banner--warn .wave-banner__label {
+    color: var(--c-wave-red);
+}
+
+.wave-banner--warn .wave-banner__title {
+    color: #ff8a70;
+}
+
+.wave-banner--launch .wave-banner__line {
+    background-color: rgba(110, 215, 255, 0.35);
+}
+
+.wave-banner__charge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 58px;
+    height: 5px;
+    background-color: rgb(200, 245, 255);
+    transform-origin: left;
+}
+
+.wave-banner--launch .wave-banner__label {
+    color: var(--c-launch);
+}
+
+.wave-banner--launch .wave-banner__title {
+    color: rgb(225, 248, 255);
+    letter-spacing: 6px;
+}

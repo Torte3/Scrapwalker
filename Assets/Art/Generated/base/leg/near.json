@@ -1,0 +1,208 @@
+{
+ "name": "base/leg/near",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "thigh",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "len": 82,
+    "angle": "股関節→膝の向き（今の IK）"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"len\":82,\"angle\":\"股関節→膝の向き（今の IK）\"}",
+   "frames": [
+    {
+     "file": "thigh.png",
+     "t": 0,
+     "x": -0.3333333333333357,
+     "y": -9.333333333333332,
+     "w": 248,
+     "h": 54
+    }
+   ]
+  },
+  {
+   "name": "shin",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "len": 88,
+    "angle": "膝→足首の向き"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"len\":88,\"angle\":\"膝→足首の向き\"}",
+   "frames": [
+    {
+     "file": "shin.png",
+     "t": 0,
+     "x": -0.3333333333333357,
+     "y": -7.333333333333336,
+     "w": 266,
+     "h": 42
+    }
+   ]
+  },
+  {
+   "name": "cyl-rod",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "span",
+    "anchor": "end",
+    "along": 0.85,
+    "at": [
+     5,
+     0
+    ],
+    "note": "原点を脛の along の点＋at に置き、腿の留め具の向きへ（本人 2026-10-09 に (a) を選んだ）"
+   },
+   "ctlText": "{\"kind\":\"span\",\"anchor\":\"end\",\"along\":0.85,\"at\":[5,0],\"note\":\"原点を脛の along の点＋at に置き、腿の留め具の向きへ（本人 2026-10-09 に (a) を選んだ）\"}",
+   "frames": [
+    {
+     "file": "cyl-rod.png",
+     "t": 0,
+     "x": -40,
+     "y": -1.6666666666666643,
+     "w": 125,
+     "h": 10
+    }
+   ]
+  },
+  {
+   "name": "cyl-tube",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "span",
+    "anchor": "start",
+    "along": 0.75,
+    "at": [
+     6,
+     4
+    ],
+    "len": 44,
+    "note": "原点を腿の along の点＋at に置き、脛の留め具の向きへ（棒より手前）"
+   },
+   "ctlText": "{\"kind\":\"span\",\"anchor\":\"start\",\"along\":0.75,\"at\":[6,4],\"len\":44,\"note\":\"原点を腿の along の点＋at に置き、脛の留め具の向きへ（棒より手前）\"}",
+   "frames": [
+    {
+     "file": "cyl-tube.png",
+     "t": 0,
+     "x": -3.6666666666666643,
+     "y": -3.6666666666666643,
+     "w": 154,
+     "h": 22
+    }
+   ]
+  },
+  {
+   "name": "knee",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "note": "膝"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"note\":\"膝\"}",
+   "frames": [
+    {
+     "file": "knee.png",
+     "t": 0,
+     "x": -9,
+     "y": -9,
+     "w": 54,
+     "h": 54
+    }
+   ]
+  },
+  {
+   "name": "ankle",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "note": "足首"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"note\":\"足首\"}",
+   "frames": [
+    {
+     "file": "ankle.png",
+     "t": 0,
+     "x": -5,
+     "y": -5,
+     "w": 30,
+     "h": 30
+    }
+   ]
+  },
+  {
+   "name": "foot",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "at": [
+     0,
+     10
+    ],
+    "note": "足。足首は足から at だけ上"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"at\":[0,10],\"note\":\"足。足首は足から at だけ上\"}",
+   "frames": [
+    {
+     "file": "foot.png",
+     "t": 0,
+     "x": -17,
+     "y": -8,
+     "w": 126,
+     "h": 24
+    }
+   ]
+  },
+  {
+   "name": "hip",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "at": [
+     70,
+     -10,
+     192,
+     -10,
+     330,
+     -10,
+     452,
+     -10
+    ],
+    "note": "股関節（胴に固定）。at＝脚ごとの股関節の位置（胴の左端と竜骨から）"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"at\":[70,-10,192,-10,330,-10,452,-10],\"note\":\"股関節（胴に固定）。at＝脚ごとの股関節の位置（胴の左端と竜骨から）\"}",
+   "frames": [
+    {
+     "file": "hip.png",
+     "t": 0,
+     "x": -16,
+     "y": -8,
+     "w": 96,
+     "h": 48
+    }
+   ]
+  }
+ ]
+}

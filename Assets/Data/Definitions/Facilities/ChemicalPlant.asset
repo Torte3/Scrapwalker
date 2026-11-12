@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: ChemicalPlant
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: fa7d0c658a3c41b09b5e0e60c09dc718
+    Width: 2
+    Height: 2
+    Cost:
+    - TypeReference:
+        ID: f4143340fd8546e0a54fa4bc8a051167
+      Count: 1
+    - TypeReference:
+        ID: d0fe1cdcb14a4e2ebe34088414dd6889
+      Count: 2
+    - TypeReference:
+        ID: 369504b5b1be416f822a3800af9ee56d
+      Count: 1
+    Recipes:
+    - ID: 841d4528-e0af-42a3-abf3-c5156889d8b1
+      Inputs:
+      - TypeReference:
+          ID: 119a43c25c34488c9b75e839ed2efd90
+        Count: 1
+      Source:
+        rid: 4200955278536702547
+      Result:
+        rid: 3631286885068901305
+      Seconds: 12
+      Energy: 50
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: 0c499bd7-149e-427c-a07f-46164dbf97e4
+      Inputs: []
+      Source:
+        rid: 2592786972200554133
+      Result:
+        rid: 2881318967531654601
+      Seconds: 30
+      Energy: 60
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: 5b878140-31d7-477a-9144-1adab30e1fd3
+      Inputs:
+      - TypeReference:
+          ID: 72b548cf464845a88aed82b9c9dba22f
+        Count: 1
+      - TypeReference:
+          ID: 119a43c25c34488c9b75e839ed2efd90
+        Count: 1
+      Source:
+        rid: 2016704789743970040
+      Result:
+        rid: 4323456818857059803
+      Seconds: 12
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: 00757836-85b9-4d12-ac5b-39208c83e991
+      Inputs:
+      - TypeReference:
+          ID: db5e5a8c3cdf4537810887ab7e0ef5b9
+        Count: 2
+      - TypeReference:
+          ID: 72b548cf464845a88aed82b9c9dba22f
+        Count: 1
+      Source:
+        rid: 1579573639120058742
+      Result:
+        rid: 4489368910524519431
+      Seconds: 8
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: 8c7c381a-0766-409b-9381-4b88b070d5d3
+      Inputs:
+      - TypeReference:
+          ID: cae36c90b72343c590f65d8fc8d1851c
+        Count: 2
+      Source:
+        rid: 2834120759034379142
+      Result:
+        rid: 1426201591602806341
+      Seconds: 10
+      Energy: 30
+      Requires:
+      - rid: 5453239034276973224
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: 57d46dc4-706c-4839-99a0-3eaf4def790c
+      Inputs:
+      - TypeReference:
+          ID: 0b8e9acf0678499990196a45dbee611f
+        Count: 2
+      - TypeReference:
+          ID: 119a43c25c34488c9b75e839ed2efd90
+        Count: 1
+      Source:
+        rid: 4077529314404819407
+      Result:
+        rid: 4029401388101914127
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    - ID: c6a1e3f0-58b2-4d97-a4e1-2f7b9d03c851
+      Inputs:
+      - TypeReference:
+          ID: cae36c90b72343c590f65d8fc8d1851c
+        Count: 1
+      Source:
+        rid: 3120074557316698102
+      Result:
+        rid: 2446793422599537590
+      Seconds: 10
+      Energy: 40
+      Requires:
+      - rid: 7737687952165532062
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: bdd99270bdc14395be46c39329ee604b
+    IsIndestructible: 0
+    Stats: []
+    Roles: []
+  _name: "\u5316\u5B66\u30D7\u30E9\u30F3\u30C8"
+  _recipes:
+  - _recipe: 841d4528-e0af-42a3-abf3-c5156889d8b1
+    _name: "\u785D\u77F3\u306E\u5408\u6210"
+  - _recipe: 0c499bd7-149e-427c-a07f-46164dbf97e4
+    _name: "\u6C34\u306E\u63A1\u53D6"
+  - _recipe: 5b878140-31d7-477a-9144-1adab30e1fd3
+    _name: "\u786B\u9178\u306E\u5408\u6210"
+  - _recipe: 00757836-85b9-4d12-ac5b-39208c83e991
+    _name: "\u706B\u85AC\u306E\u8ABF\u5408"
+  - _recipe: 8c7c381a-0766-409b-9381-4b88b070d5d3
+    _name: "\u786B\u9EC4\u306E\u7CBE\u88FD"
+  - _recipe: 57d46dc4-706c-4839-99a0-3eaf4def790c
+    _name: "\u7C98\u571F\u306E\u5408\u6210"
+  - _recipe: c6a1e3f0-58b2-4d97-a4e1-2f7b9d03c851
+    _name: "\u30D7\u30E9\u30B9\u30C1\u30C3\u30AF\u306E\u5408\u6210"
+  _look:
+    _category: 0
+    _act:
+      rid: 2772568519610784339
+    _unlabeled: 0
+    _station:
+      rid: 5586112747009406790
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: -2
+    _idle: {fileID: 6406083321523384942, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: 2404125526539464028, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 5020724091980283241, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _damage: {fileID: -2165269497349211559, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1426201591602806341
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: 72b548cf464845a88aed82b9c9dba22f
+        Count: 1
+    - rid: 1579573639120058742
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2016704789743970040
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2446793422599537590
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: f2c8d4a1b6e04d7a9c3e5b81a0d7f4e6
+        Count: 2
+    - rid: 2592786972200554133
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2834120759034379142
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2881318967531654601
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: 119a43c25c34488c9b75e839ed2efd90
+        Count: 1
+    - rid: 3120074557316698102
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3631286885068901305
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: db5e5a8c3cdf4537810887ab7e0ef5b9
+        Count: 1
+    - rid: 4029401388101914127
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: f3f9282c0c474ca399f0e38c51d56002
+        Count: 1
+    - rid: 4077529314404819407
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 4200955278536702547
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 4323456818857059803
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: 194be409d48a4c69ac4328fa2408a183
+        Count: 1
+    - rid: 4489368910524519431
+      type: {class: MaterialResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        MaterialReference:
+          ID: b494d3e7f8b44e93bc79849f9ac370c8
+        Count: 2
+    - rid: 5453239034276973224
+      type: {class: ResearchRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        ResearchReference:
+          ID: ce710212353e4e52b83d108aabf11929
+    - rid: 7737687952165532062
+      type: {class: ResearchRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        ResearchReference:
+          ID: ce710212353e4e52b83d108aabf11929
+    - rid: 5586112747009406790
+      type: {class: StationLook, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _dx: -4
+        _onDeck: 1
+    - rid: 2772568519610784339
+      type: {class: ActWhileWorking, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

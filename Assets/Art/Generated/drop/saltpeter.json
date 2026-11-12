@@ -1,0 +1,28 @@
+{
+ "name": "drop/saltpeter",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -5,
+     "y": -3.7142857142857153,
+     "w": 68,
+     "h": 70
+    }
+   ]
+  }
+ ]
+}

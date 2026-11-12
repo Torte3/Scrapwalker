@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="MaterialLine" src="../../Widgets/Materials/MaterialLine.uxml" />
+    <ui:Button name="card" class="build-card">
+        <ui:VisualElement class="build-card__thumb-area" picking-mode="Ignore">
+            <ui:VisualElement name="thumb" class="build-card__thumb" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement class="build-card__body" picking-mode="Ignore">
+            <ui:VisualElement class="build-card__head" picking-mode="Ignore">
+                <ui:Label name="name" class="build-card__name nowrap" picking-mode="Ignore" />
+                <ui:Label name="size" class="build-card__size nowrap" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement name="lines" class="build-card__lines mats--small" picking-mode="Ignore">
+                <ui:Instance template="MaterialLine" name="line-template" class="build-card__line" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ring" class="build-card__ring hidden" picking-mode="Ignore" />
+    </ui:Button>
+</ui:UXML>

@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="node" class="research-node" picking-mode="Ignore">
+        <ui:VisualElement class="research-node__glow" picking-mode="Ignore" />
+        <ui:VisualElement class="research-node__ring" picking-mode="Ignore" />
+        <ui:VisualElement name="frame" class="research-node__frame">
+            <ui:Label name="name" class="research-node__name nowrap" picking-mode="Ignore" />
+            <ui:VisualElement name="picture" class="research-node__picture" picking-mode="Ignore" />
+            <ui:VisualElement class="research-node__bar" picking-mode="Ignore">
+                <ui:VisualElement name="bar-fill" class="research-node__bar-fill" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="research-node__dashed dash-frame" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

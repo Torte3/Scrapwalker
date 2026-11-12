@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="recipe" class="room-recipe">
+        <ui:VisualElement name="recipe-head" class="room-recipe__head">
+            <ui:VisualElement class="icon icon--tri-right room-recipe__mark invisible" picking-mode="Ignore" />
+            <ui:Label name="recipe-title" class="room-recipe__title bold nowrap" picking-mode="Ignore" />
+            <ui:Label name="recipe-time" class="room-recipe__time dim nowrap" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement class="room-dash" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

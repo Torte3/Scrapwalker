@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="row" class="save-row">
+        <ui:VisualElement name="stripe" class="save-row__stripe" picking-mode="Ignore" />
+        <ui:Label name="name" class="save-row__name nowrap" picking-mode="Ignore" />
+        <ui:Label name="star" class="save-row__star nowrap invisible" picking-mode="Ignore" />
+        <ui:VisualElement class="save-row__info" picking-mode="Ignore">
+            <ui:VisualElement name="meta" class="save-row__meta" picking-mode="Ignore">
+                <ui:Label name="saved-at" class="save-row__cell save-row__cell--saved-at nowrap" picking-mode="Ignore" />
+                <ui:Label name="ruin" class="save-row__cell save-row__cell--ruin dim nowrap" picking-mode="Ignore" />
+                <ui:VisualElement class="save-row__cell save-row__cell--play" picking-mode="Ignore">
+                    <ui:Label name="play-label" class="dim nowrap" picking-mode="Ignore" />
+                    <ui:Label name="play" class="save-row__value nowrap" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="note" class="save-row__note dim nowrap" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Button name="button-0" class="btn save-row__btn">
+            <ui:Label name="label" picking-mode="Ignore" />
+        </ui:Button>
+        <ui:Button name="button-1" class="btn save-row__btn">
+            <ui:Label name="label" picking-mode="Ignore" />
+        </ui:Button>
+        <ui:Button name="button-2" class="btn save-row__btn">
+            <ui:Label name="label" picking-mode="Ignore" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

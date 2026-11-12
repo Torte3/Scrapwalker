@@ -1,0 +1,28 @@
+{
+ "name": "room/barrier2/idle",
+ "scale": 7,
+ "origin": [
+  54,
+  618
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 378,
+     "h": 378
+    }
+   ]
+  }
+ ]
+}

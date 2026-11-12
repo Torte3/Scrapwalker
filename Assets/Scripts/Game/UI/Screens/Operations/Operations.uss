@@ -1,0 +1,126 @@
+.ops {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--bottom-height);
+    flex-direction: row;
+    align-items: stretch;
+    padding: 12px 14px;
+    border-top-width: 1px;
+    border-top-color: var(--c-line);
+}
+
+.ops__side {
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ops__center {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 16px;
+}
+
+.ops__row {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0 -4px;
+}
+
+.ops__row--sub {
+    margin-top: 8px;
+}
+
+.ops-primary {
+    flex-direction: column;
+    width: 330px;
+    height: 126px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--c-bright);
+}
+
+.ops-primary__icon {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 6px;
+    -unity-background-image-tint-color: var(--c-bright);
+}
+
+.ops-primary__label {
+    font-size: 26px;
+    -unity-font-style: bold;
+    color: var(--c-bright);
+}
+
+.ops-primary--amber {
+    --btn-edge: rgba(232, 163, 61, 0.7);
+    -unity-background-image-tint-color: rgba(232, 163, 61, 0.14);
+}
+
+.ops-primary--amber .corner {
+    border-color: var(--c-amber);
+}
+
+.ops-primary--warn {
+    --btn-edge: rgba(224, 83, 61, 0.7);
+    -unity-background-image-tint-color: rgba(224, 83, 61, 0.14);
+}
+
+.ops-primary--warn .corner {
+    border-color: var(--c-warn);
+}
+
+.ops-primary--cyan {
+    --btn-edge: rgba(76, 201, 224, 0.7);
+    -unity-background-image-tint-color: rgba(76, 201, 224, 0.14);
+}
+
+.ops-primary--cyan .corner {
+    border-color: var(--c-cyan);
+}
+
+.ops-primary--plain {
+    --btn-edge: rgba(217, 221, 208, 0.7);
+    -unity-background-image-tint-color: rgba(217, 221, 208, 0.14);
+}
+
+.ops-primary--plain .corner {
+    border-color: var(--c-text);
+}
+
+.ops-small {
+    margin: 0 4px;
+    padding: 2px 7px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.07);
+}
+
+.ops-small--time {
+    width: 110px;
+}
+
+.ops-small--sub {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.ops-small__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.ops-small__icon--alone {
+    width: 26px;
+    height: 26px;
+}
+
+.ops-small__label {
+    font-size: 18px;
+}

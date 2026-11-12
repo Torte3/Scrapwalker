@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045b4b947052487fb7cb5cdd8573d101, type: 3}
+  m_Name: ArmsFactory5
+  m_EditorClassIdentifier: Scrapwalker.Game::Scrapwalker.Game.Definitions.ItemTableAsset
+  _definition:
+    ID: 8beb3e57d63a80a448cec71dd754e8f5
+    Rows:
+    - Min: 1
+      Max: 1
+      Entries:
+      - TypeReference:
+          ID: 3d11544daf990e44b961cd8ccd070e7a
+        Weight: 1
+    - Min: 2
+      Max: 2
+      Entries:
+      - TypeReference:
+          ID: db5e5a8c3cdf4537810887ab7e0ef5b9
+        Weight: 1
+    - Min: 1
+      Max: 1
+      Entries:
+      - TypeReference:
+          ID: 360a794ab2e54c5393a1a6c3d7dd139e
+        Weight: 1
+    - Min: 2
+      Max: 2
+      Entries:
+      - TypeReference:
+          ID: 6aea9076716a481bb142af85eeca1638
+        Weight: 1
+    - Min: 2
+      Max: 2
+      Entries:
+      - TypeReference:
+          ID: fb9b1290c3aa45e7b8bf2cba360cb5b3
+        Weight: 1
+    - Min: 4
+      Max: 4
+      Entries:
+      - TypeReference:
+          ID: cae36c90b72343c590f65d8fc8d1851c
+        Weight: 1

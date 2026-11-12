@@ -1,0 +1,28 @@
+{
+ "name": "room/ladder/layers",
+ "scale": 7,
+ "origin": [
+  54,
+  618
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "base",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "base.png",
+     "t": 0,
+     "x": 2,
+     "y": -3.571428571428555,
+     "w": 378,
+     "h": 442
+    }
+   ]
+  }
+ ]
+}

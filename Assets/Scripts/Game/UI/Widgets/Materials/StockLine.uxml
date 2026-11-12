@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="stock" class="stock" picking-mode="Ignore">
+        <ui:Label name="stock-name" class="stock__name nowrap" picking-mode="Ignore" />
+        <ui:Label name="stock-count" class="stock__count bold nowrap" picking-mode="Ignore" />
+        <ui:Label name="stock-breakdown" class="stock__breakdown dim nowrap" picking-mode="Ignore" />
+        <ui:VisualElement class="stock__dash" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

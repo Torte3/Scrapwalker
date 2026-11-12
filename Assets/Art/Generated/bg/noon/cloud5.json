@@ -1,0 +1,28 @@
+{
+ "name": "bg/noon/cloud5",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -150.7170955649191,
+     "y": -20.8877631745089,
+     "w": 904,
+     "h": 125
+    }
+   ]
+  }
+ ]
+}

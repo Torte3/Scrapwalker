@@ -1,0 +1,81 @@
+.window-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--top-height);
+    bottom: var(--bottom-height);
+    align-items: center;
+    justify-content: center;
+}
+
+.window-layer--full {
+    top: 0;
+    bottom: 0;
+    background-color: rgba(6, 9, 8, 0.86);
+}
+
+.window-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.window {
+    width: 1120px;
+    height: 614px;
+    padding: 19px 21px 17px 21px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--c-window-border);
+    background-color: var(--c-window-fill);
+}
+
+.window__corners .corner {
+    width: 30px;
+    height: 30px;
+}
+
+.window__head {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+.window__title {
+    flex-grow: 1;
+    font-size: 20px;
+    -unity-font-style: bold;
+    letter-spacing: 1.6px;
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+}
+
+.window__head-extra {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+.window__close {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.window__close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.window--no-close .window__close {
+    visibility: hidden;
+}
+
+.window__body {
+    flex-grow: 1;
+    padding-top: 12px;
+}

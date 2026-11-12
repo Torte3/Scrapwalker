@@ -1,0 +1,78 @@
+.edge-hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--top-height);
+    bottom: var(--bottom-height);
+}
+
+.edge-hint__side {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+}
+
+.edge-hint__side--left {
+    left: 0;
+}
+
+.edge-hint__side--right {
+    right: 0;
+}
+
+.edge-hint__fade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/Assets/Art/UI/fade-horizontal.png");
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+}
+
+.edge-hint__side--right > .edge-hint__fade {
+    scale: -1 1;
+}
+
+.edge-hint__chevron {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+}
+
+.edge-hint__side--left > .edge-hint__chevron {
+    left: 0;
+}
+
+.edge-hint__side--right > .edge-hint__chevron {
+    right: 0;
+}
+
+.edge-hint__stroke {
+    position: absolute;
+    left: -1.75px;
+    top: -1.75px;
+    height: 3.5px;
+    border-radius: 1.75px;
+    background-color: var(--c-amber);
+    transform-origin: 1.75px 50%;
+}
+
+.edge-hint__stroke--left-up {
+    rotate: -45deg;
+}
+
+.edge-hint__stroke--left-down {
+    rotate: 45deg;
+}
+
+.edge-hint__stroke--right-up {
+    rotate: -135deg;
+}
+
+.edge-hint__stroke--right-down {
+    rotate: 135deg;
+}

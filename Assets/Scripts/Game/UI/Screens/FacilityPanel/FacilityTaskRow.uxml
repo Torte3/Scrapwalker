@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="QualityFilterIcon" src="../../Widgets/QualityFilters/QualityFilterIcon.uxml" />
+    <ui:Template name="QualityFilterEditor" src="../../Widgets/QualityFilters/QualityFilterEditor.uxml" />
+    <ui:Template name="FacilityTaskBot" src="FacilityTaskBot.uxml" />
+    <ui:VisualElement name="order-item">
+        <ui:VisualElement name="order" class="room-order">
+            <ui:VisualElement class="room-order__head">
+                <ui:Label name="order-title" class="room-order__title bold" />
+                <ui:Label name="order-state" class="room-order__state nowrap" />
+                <ui:Button name="order-loop" class="btn room-choice">
+                    <ui:Label name="order-loop-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="order-front" class="btn room-tiny">
+                    <ui:Label name="order-front-label" picking-mode="Ignore" class="room-order__front-mark" />
+                </ui:Button>
+                <ui:Button name="order-up" class="btn room-tiny">
+                    <ui:Label name="order-up-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="order-down" class="btn room-tiny">
+                    <ui:Label name="order-down-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="order-remove" class="btn room-tiny room-order__remove">
+                    <ui:Label name="order-remove-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="room-order__mats-row">
+                <ui:VisualElement name="order-mats" class="room-mats mats--small" />
+                <ui:Instance template="QualityFilterIcon" name="order-filter" class="room-filter-icon" />
+            </ui:VisualElement>
+            <ui:VisualElement name="order-bots" class="room-order__bots">
+                <ui:Instance template="FacilityTaskBot" name="bot-template" />
+            </ui:VisualElement>
+            <ui:VisualElement name="order-bar" class="bar room-bar job-bar">
+                <ui:VisualElement name="order-ready" class="bar__fill job-bar__ready" />
+                <ui:VisualElement name="order-progress" class="bar__fill job-bar__progress" />
+            </ui:VisualElement>
+            <ui:VisualElement class="room-order__line" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:Instance template="QualityFilterEditor" name="order-filter-editor" class="room-order__editor" />
+    </ui:VisualElement>
+</ui:UXML>

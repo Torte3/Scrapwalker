@@ -1,0 +1,28 @@
+{
+ "name": "room-stripes/dism",
+ "scale": 7,
+ "origin": [
+  54,
+  618
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": 0,
+     "y": 0,
+     "w": 406,
+     "h": 406
+    }
+   ]
+  }
+ ]
+}

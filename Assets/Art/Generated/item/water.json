@@ -1,0 +1,28 @@
+{
+ "name": "item/water",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -9.571428571428573,
+     "y": -22,
+     "w": 134,
+     "h": 158
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "name": "item/raremetal",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -13.571428571428573,
+     "y": -14.57142857142857,
+     "w": 183,
+     "h": 106
+    }
+   ]
+  }
+ ]
+}

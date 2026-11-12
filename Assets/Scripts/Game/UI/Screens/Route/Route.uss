@@ -1,0 +1,89 @@
+.route-list {
+    flex-grow: 1;
+}
+
+.route-card {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 9px 11px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--c-line);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.route-card--unreachable {
+    opacity: 0.5;
+}
+
+.route-card__stripe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--c-amber);
+}
+
+.route-card--unreachable > .route-card__stripe {
+    background-color: var(--c-bar-border);
+}
+
+.route-card__body {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.route-card__name {
+    font-size: 17px;
+    -unity-font-style: bold;
+    margin-right: 8px;
+}
+
+.route-card__main-items {
+    font-size: 12px;
+    color: var(--c-dim);
+    margin-right: 8px;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.route-card__cleared {
+    flex-grow: 1;
+    font-size: 13px;
+}
+
+.route-card__land {
+    width: 160px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.route-card__repeat {
+    margin-right: 8px;
+}
+
+.route-card__land--usable {
+    background-color: var(--c-button-fill);
+}
+
+.route-card__repeat.route-card__land--usable {
+    --btn-edge: var(--c-amber);
+}
+
+.route-card__repeat.route-card__land--usable > Label {
+    color: var(--c-amber);
+}
+
+.route-card__land > Label {
+    font-size: 14px;
+    color: var(--c-dim);
+}
+
+.route-card__land--usable > Label {
+    color: var(--c-text);
+    -unity-font-style: bold;
+}

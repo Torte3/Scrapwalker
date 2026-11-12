@@ -1,0 +1,61 @@
+{
+ "name": "base/radar0",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "stand",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "at": [
+     190,
+     160
+    ],
+    "note": "屋根に置く台の基準の点"
+   },
+   "ctlText": "{\"at\":[190,160],\"note\":\"屋根に置く台の基準の点\"}",
+   "frames": [
+    {
+     "file": "stand.png",
+     "t": 0,
+     "x": 170,
+     "y": 130,
+     "w": 120,
+     "h": 90
+    }
+   ]
+  },
+  {
+   "name": "dish",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "pivot": [
+     190,
+     128
+    ],
+    "rest": 1.1,
+    "center": 1.1
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"pivot\":[190,128],\"rest\":1.1,\"center\":1.1}",
+   "frames": [
+    {
+     "file": "dish.png",
+     "t": 0,
+     "x": 171.33333333333334,
+     "y": 99.33333333333333,
+     "w": 106,
+     "h": 171
+    }
+   ]
+  }
+ ]
+}

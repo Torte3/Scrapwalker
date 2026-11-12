@@ -1,0 +1,54 @@
+{
+ "name": "fx/cshell",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "tail",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "angle": "飛ぶ向き（放物線の接線）"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"angle\":\"飛ぶ向き（放物線の接線）\"}",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "tail.png",
+     "t": 0,
+     "x": -32,
+     "y": -8,
+     "w": 90,
+     "h": 48
+    }
+   ]
+  },
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "angle": "飛ぶ向き（放物線の接線）"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"angle\":\"飛ぶ向き（放物線の接線）\"}",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -10.666666666666668,
+     "y": -4.666666666666667,
+     "w": 65,
+     "h": 28
+    }
+   ]
+  }
+ ]
+}

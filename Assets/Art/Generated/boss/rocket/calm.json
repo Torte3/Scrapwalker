@@ -1,0 +1,91 @@
+{
+ "name": "boss/rocket/calm",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "chassis",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "chassis.png",
+     "t": 0,
+     "x": -92,
+     "y": -30,
+     "w": 552,
+     "h": 90
+    }
+   ]
+  },
+  {
+   "name": "tread",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "tread.png",
+     "t": 0,
+     "x": -93,
+     "y": -30,
+     "w": 555,
+     "h": 12
+    }
+   ]
+  },
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -77,
+     "y": -77,
+     "w": 492,
+     "h": 120
+    }
+   ]
+  },
+  {
+   "name": "tubes",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "tubes.png",
+     "t": 0,
+     "x": -78.66666666666666,
+     "y": -144,
+     "w": 293,
+     "h": 214
+    }
+   ]
+  },
+  {
+   "name": "glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": null,
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    null
+   ]
+  }
+ ]
+}

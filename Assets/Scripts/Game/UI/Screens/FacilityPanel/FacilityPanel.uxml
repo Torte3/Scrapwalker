@@ -1,0 +1,75 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Window" src="../../Widgets/Window.uxml" />
+    <ui:Template name="FacilityRegister" src="FacilityRegister.uxml" />
+    <ui:Template name="FacilityQueue" src="FacilityQueue.uxml" />
+    <ui:Template name="ResearchPage" src="../Research/ResearchPage.uxml" />
+    <ui:Template name="FacilityRecipeRow" src="FacilityRecipeRow.uxml" />
+    <ui:Template name="FacilityDoneRow" src="FacilityDoneRow.uxml" />
+    <ui:Template name="FacilityTaskRow" src="FacilityTaskRow.uxml" />
+    <ui:Template name="MaterialLine" src="../../Widgets/Materials/MaterialLine.uxml" />
+    <ui:Template name="StockLine" src="../../Widgets/Materials/StockLine.uxml" />
+    <Style src="FacilityPanel.uss" />
+    <Style src="../Research/Research.uss" />
+    <ui:Instance template="Window" name="room-panel" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="room-head" class="room-head">
+            <ui:VisualElement name="tabs" class="room-tabs">
+                <ui:Button name="tab-research" class="btn room-tab tab">
+                    <ui:Label name="tab-research-label" />
+                </ui:Button>
+                <ui:Button name="tab-work" class="btn room-tab tab">
+                    <ui:Label name="tab-work-label" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="room-head__spacer" />
+            <ui:VisualElement name="page-heads" class="room-head__pages" />
+        </ui:VisualElement>
+        <ui:Instance template="ResearchPage" name="research-host" class="room-page" />
+        <ui:VisualElement name="work-page" class="room-split room-page">
+            <ui:VisualElement name="left" class="room-left">
+                <ui:VisualElement name="detail" class="room-detail">
+                    <ui:VisualElement class="section">
+                        <ui:VisualElement class="section__mark" />
+                        <ui:Label name="facility-title" class="section__title nowrap" />
+                        <ui:Label name="position" class="room-section__right nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="room-detail__body room-stack-6">
+                        <ui:VisualElement class="room-status-row">
+                            <ui:Label name="status" class="room-status nowrap" />
+                            <ui:Label name="tier" class="room-tier nowrap" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="hp-row" class="room-key-value">
+                            <ui:Label name="hp-key" class="room-key" />
+                            <ui:Label name="hp" class="room-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="hp-bar" class="bar room-bar job-bar job-bar--active">
+                            <ui:VisualElement name="hp-fill" class="bar__fill job-bar__progress" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="fire-row" class="room-key-value">
+                            <ui:Label name="fire-key" class="room-key" />
+                            <ui:Label name="fire" class="room-value" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="station-row" class="room-key-value">
+                            <ui:Label name="station-key" class="room-key" />
+                            <ui:Label class="room-value" />
+                            <ui:VisualElement class="room-choices">
+                                <ui:Button name="station-peace" class="btn room-choice">
+                                    <ui:Label name="station-peace-label" picking-mode="Ignore" />
+                                </ui:Button>
+                                <ui:Button name="station-combat" class="btn room-choice">
+                                    <ui:Label name="station-combat-label" picking-mode="Ignore" />
+                                </ui:Button>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Instance template="FacilityRegister" name="register-panel" class="room-register" />
+            </ui:VisualElement>
+            <ui:Instance template="FacilityQueue" name="right" class="room-right" />
+        </ui:VisualElement>
+        <ui:Instance template="FacilityRecipeRow" name="recipe-row-template" />
+        <ui:Instance template="FacilityDoneRow" name="done-row-template" />
+        <ui:Instance template="FacilityTaskRow" name="order-row-template" />
+        <ui:Instance template="MaterialLine" name="material-line-template" />
+        <ui:Instance template="StockLine" name="stock-line-template" />
+    </ui:Instance>
+</ui:UXML>

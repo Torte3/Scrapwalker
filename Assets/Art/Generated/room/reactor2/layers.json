@@ -1,0 +1,284 @@
+{
+ "name": "room/reactor2/layers",
+ "scale": 7,
+ "origin": [
+  54,
+  560
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "base",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "base.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 784,
+     "h": 784
+    }
+   ]
+  },
+  {
+   "name": "base-active",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act",
+    "replaces": "base"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\",\"replaces\":\"base\"}",
+   "frames": [
+    {
+     "file": "base-active.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 784,
+     "h": 784
+    }
+   ]
+  },
+  {
+   "name": "core",
+   "anim": {
+    "mode": "loop",
+    "period": 62.83185307179586,
+    "frames": 12
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\"}",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "core_0.png",
+     "t": 0,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_1.png",
+     "t": 5.235987755982989,
+     "x": 15,
+     "y": 36,
+     "w": 224,
+     "h": 224
+    },
+    {
+     "file": "core_2.png",
+     "t": 10.471975511965978,
+     "x": 15,
+     "y": 36,
+     "w": 224,
+     "h": 224
+    },
+    {
+     "file": "core_3.png",
+     "t": 15.707963267948964,
+     "x": 15,
+     "y": 36,
+     "w": 224,
+     "h": 224
+    },
+    {
+     "file": "core_4.png",
+     "t": 20.943951023931955,
+     "x": 15,
+     "y": 36,
+     "w": 224,
+     "h": 224
+    },
+    {
+     "file": "core_5.png",
+     "t": 26.179938779914945,
+     "x": 15,
+     "y": 36,
+     "w": 224,
+     "h": 224
+    },
+    {
+     "file": "core_6.png",
+     "t": 31.415926535897928,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_7.png",
+     "t": 36.65191429188092,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_8.png",
+     "t": 41.88790204786391,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_9.png",
+     "t": 47.1238898038469,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_10.png",
+     "t": 52.35987755982989,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    },
+    {
+     "file": "core_11.png",
+     "t": 57.59586531581288,
+     "x": 15.142857142857139,
+     "y": 36.14285714285711,
+     "w": 222,
+     "h": 222
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "front.png",
+     "t": 0,
+     "x": 20.14285714285714,
+     "y": 7.428571428571445,
+     "w": 655,
+     "h": 725
+    }
+   ]
+  },
+  {
+   "name": "front-active",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act",
+    "replaces": "front"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\",\"replaces\":\"front\"}",
+   "frames": [
+    {
+     "file": "front-active.png",
+     "t": 0,
+     "x": 20.14285714285714,
+     "y": 7.428571428571445,
+     "w": 655,
+     "h": 725
+    }
+   ]
+  },
+  {
+   "name": "pump",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "pivot": [
+     92,
+     97
+    ],
+    "rest": 0,
+    "center": 0,
+    "spin": 0.3,
+    "idle": 0
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"pivot\":[92,97],\"rest\":0,\"center\":0,\"spin\":0.3,\"idle\":0}",
+   "frames": [
+    {
+     "file": "pump.png",
+     "t": 0,
+     "x": 87.85714285714286,
+     "y": 92.85714285714289,
+     "w": 58,
+     "h": 58
+    }
+   ]
+  },
+  {
+   "name": "needle",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "pivot": [
+     68,
+     90
+    ],
+    "rest": -0.55,
+    "center": -0.55,
+    "sway": [
+     0.12,
+     0.05,
+     0
+    ],
+    "idle": -2.5
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"pivot\":[68,90],\"rest\":-0.55,\"center\":-0.55,\"sway\":[0.12,0.05,0],\"idle\":-2.5}",
+   "frames": [
+    {
+     "file": "needle.png",
+     "t": 0,
+     "x": 67.42857142857143,
+     "y": 87.85714285714289,
+     "w": 25,
+     "h": 19
+    }
+   ]
+  },
+  {
+   "name": "alarm",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "blink",
+    "when": "!act",
+    "period": 40,
+    "on": 20
+   },
+   "ctlText": "{\"kind\":\"blink\",\"when\":\"!act\",\"period\":40,\"on\":20}",
+   "frames": [
+    {
+     "file": "alarm.png",
+     "t": 0,
+     "x": 67.57142857142857,
+     "y": 94.57142857142856,
+     "w": 69,
+     "h": 69
+    }
+   ]
+  }
+ ]
+}

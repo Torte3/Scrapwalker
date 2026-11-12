@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: NuclearReactor
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 35737972c040406aaf2123d48db3bbcf
+    Width: 2
+    Height: 2
+    Cost:
+    - TypeReference:
+        ID: f40da720e7444f938e99e14bc0f67cd7
+      Count: 1
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 12
+    - TypeReference:
+        ID: 369504b5b1be416f822a3800af9ee56d
+      Count: 2
+    - TypeReference:
+        ID: d0fe1cdcb14a4e2ebe34088414dd6889
+      Count: 2
+    Recipes:
+    - ID: 9ce7a053-dfb9-44dd-9419-da92d7b03842
+      Inputs:
+      - TypeReference:
+          ID: b483257e6b44478d9d0b94b0f18fe8f9
+        Count: 1
+      Source:
+        rid: 2937167374287074987
+      Result:
+        rid: 2921584908223803181
+      Seconds: 240
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 0
+      IsUnmanned: 1
+    UnlockedBy:
+      ResearchReference:
+        ID: b366e6c4b0dd46278fed6526772c1306
+    IsIndestructible: 0
+    Stats: []
+    Roles: []
+  _name: "\u539F\u5B50\u7089"
+  _recipes:
+  - _recipe: 9ce7a053-dfb9-44dd-9419-da92d7b03842
+    _name: "\u767A\u96FB\uFF08\u71C3\u6599\u68D2\uFF09"
+  _look:
+    _category: 2
+    _act:
+      rid: 5577401119667776347
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: -2
+    _idle: {fileID: 4187722572108508297, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: -7809663403849022092, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: -2165269497349211559, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2921584908223803181
+      type: {class: EnergyResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Coal: 30
+    - rid: 2937167374287074987
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 5577401119667776347
+      type: {class: ActWhileOperational, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d923d6ac24e255b40a608c8507818ba6, type: 3}
+  m_Name: Radar2
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 205cf103969c4f6c9a4c940434d1941a
+    Requires:
+    - ID: 2b935fbd819046d1966776b13a89d1c4
+    Effects:
+    - rid: 6306476877570600128
+    Talks:
+    - Cue: 7
+      Delay: 1
+      Lines:
+      - Face: 0
+        Text: "\u30EC\u30FC\u30C0\u30FC\u306E\u5F37\u5316\u304C\u6E08\u307F\u307E\u3057\u305F\u3002\n\u5C4A\u304F\u7BC4\u56F2\u304C\u5E83\u304C\u3063\u305F\u306E\u3067\u3001\u5EC3\u589F\u3092\u63A2\u3057\u307E\u3059\u3002"
+      - Face: 1
+        Text: "\u898B\u3064\u3051\u307E\u3057\u305F\u3002\n\u65B0\u3057\u304F {found}
+          \u304B\u6240\u306E\u5EC3\u589F\u304C\u3001\u884C\u304D\u5148\u306B\u51FA\u3066\u3044\u307E\u3059\u3002"
+    - Cue: 8
+      Delay: 2
+      Lines:
+      - Face: 0
+        Text: "\u4ECA\u898B\u3048\u308B\u7BC4\u56F2\u306E\u5EC3\u589F\u306F\u3001\u5168\u90E8\u56DE\u308A\u307E\u3057\u305F\u3002"
+      - Face: 0
+        Text: "\u3082\u3063\u3068\u9060\u304F\u306E\u5EC3\u589F\u3092\u63A2\u3057\u306B\u884C\u304F\u306B\u306F\u3001\n\u30EC\u30FC\u30C0\u30FC\u306E\u5F37\u5316\u304C\u5FC5\u8981\u3067\u3059\u3002"
+      - Face: 0
+        Text: "\u30EC\u30FC\u30C0\u30FC\u306E\u5F37\u5316\u306F\u3001\u79C1\u306E\u90E8\u5C4B\u306E\u300C\u4F5C\u696D\u300D\u3067\u3067\u304D\u307E\u3059\u3002"
+  references:
+    version: 2
+    RefIds:
+    - rid: 6306476877570600128
+      type: {class: TimeOfDayEffect, ns: Scrapwalker.Core.Outpost.Upgrades, asm: Scrapwalker.Core}
+      data:
+        Time: 1

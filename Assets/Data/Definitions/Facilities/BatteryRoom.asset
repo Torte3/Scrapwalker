@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: BatteryRoom
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 61a6d8cf1dea4a7698023d41e2c93d4f
+    Width: 1
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: e18b2792232d49deb107ad98aeac4537
+      Count: 2
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 2
+    Recipes:
+    - ID: 4d02fe92-56c8-423c-b2fd-540a26ebb90a
+      Inputs:
+      - TypeReference:
+          ID: e18b2792232d49deb107ad98aeac4537
+        Count: 2
+      Source:
+        rid: 2171262467040134442
+      Result:
+        rid: 3653275576871472018
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: 0b12998639d14b778882d429c4419dd3
+    IsIndestructible: 0
+    Stats:
+    - Stat: 4
+      Amount: 600
+    Roles:
+    - rid: 3872523951829890165
+  _name: "\u84C4\u96FB\u5BA4"
+  _recipes:
+  - _recipe: 4d02fe92-56c8-423c-b2fd-540a26ebb90a
+    _name: "\u5BB9\u91CF\u306E\u62E1\u5F351"
+  _look:
+    _category: 2
+    _act:
+      rid: 4730533983221303889
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: 8784229681422085893
+    _idle: {fileID: 7150574569090428759, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: -9030422305422316815, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: -2444080512407419032, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2171262467040134442
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3653275576871472018
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 4
+          Amount: 300
+    - rid: 3872523951829890165
+      type: {class: BatteryRole, ns: Scrapwalker.Core.Outpost.Roles, asm: Scrapwalker.Core}
+      data: 
+    - rid: 8784229681422085893
+      type: {class: FillGauge, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _steps: 6
+        _roundsUp: 0
+    - rid: 4730533983221303889
+      type: {class: ActWhileOperational, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

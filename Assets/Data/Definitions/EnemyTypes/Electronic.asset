@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01785f30e5b8430fa0eca837d8765b04, type: 3}
+  m_Name: Electronic
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 8efe46b9e81c4a2a8493b0f1da1e222b
+    Speed: 2.8
+    StopDistance: 13
+    Abilities:
+    - rid: 2748399785508170917
+  _name: "\u96FB\u5B50\u6226\u578B"
+  _styles:
+  - {fileID: 4788168698382271933}
+  _killed:
+    _clip: {fileID: 8300000, guid: 0b033b270fd94fe3823773cfe20850fa, type: 3}
+    _volumeDecibels: 0
+    _pitchJitter: 0.05
+    _maxVoices: 4
+  references:
+    version: 2
+    RefIds:
+    - rid: 2748399785508170917
+      type: {class: BarrierAbility, ns: Scrapwalker.Core.Combat, asm: Scrapwalker.Core}
+      data:
+        Layers: 2
+        RecoverSeconds: 3
+--- !u!114 &4788168698382271933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734b34c94f724d5afcb64a71ee45b89e, type: 3}
+  m_Name: Electronic Strike
+  m_EditorClassIdentifier:
+  _definition:
+    ID: 0adcea7a79542828a4d04ab645e7a43a
+  _cue: 0
+  _sounds:
+    _begin:
+      _clip: {fileID: 0}
+      _volumeDecibels: 0
+      _pitchJitter: 0
+      _maxVoices: 0
+    _hit:
+      _clip: {fileID: 8300000, guid: 46935713cd8f4e0fa7d4f9e8e62cfe32, type: 3}
+      _volumeDecibels: 0
+      _pitchJitter: 0.05
+      _maxVoices: 4

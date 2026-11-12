@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="card" class="route-card">
+        <ui:VisualElement class="route-card__stripe" picking-mode="Ignore" />
+        <ui:VisualElement class="route-card__body">
+            <ui:Label name="name" class="route-card__name nowrap" />
+            <ui:Label name="main-items" class="route-card__main-items nowrap" />
+            <ui:Label name="cleared" class="route-card__cleared ok nowrap" />
+        </ui:VisualElement>
+        <ui:Button name="repeat" class="btn route-card__land route-card__land--usable route-card__repeat">
+            <ui:Label name="repeat-label" />
+        </ui:Button>
+        <ui:Button name="land" class="btn route-card__land">
+            <ui:Label name="land-label" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

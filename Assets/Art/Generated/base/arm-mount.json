@@ -1,0 +1,28 @@
+{
+ "name": "base/arm-mount",
+ "scale": 3,
+ "origin": [
+  592,
+  470
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -8,
+     "y": -26,
+     "w": 42,
+     "h": 258
+    }
+   ]
+  }
+ ]
+}

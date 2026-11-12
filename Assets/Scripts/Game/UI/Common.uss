@@ -1,0 +1,483 @@
+:root {
+    --c-background: #050605;
+    --c-line: #3a463d;
+    --c-text: #d9ddd0;
+    --c-bright: #f2f4ec;
+    --c-dim: #8b9486;
+    --c-amber: #e8a33d;
+    --c-warn: #e0533d;
+    --c-caution: #c9a25a;
+    --c-cyan: #4cc9e0;
+    --c-barrier: #96a5ff;
+    --c-ok: #8fd694;
+    --c-delivered: #7fd3e3;
+    --c-boss: #e8c07d;
+    --c-button-border: #4a574e;
+    --c-button-fill: rgba(255, 255, 255, 0.03);
+    --c-bar: #26302a;
+    --c-bar-border: #45524a;
+    --c-wave-done: #7d8c6f;
+    --c-waiting: #6f7a68;
+    --c-ready: #2f7d8c;
+    --c-ready-dim: #2a5f68;
+    --c-section-rule: #33403a;
+    --c-window-border: #37423a;
+    --c-window-fill: rgb(9, 12, 10);
+    --c-panel-fill: rgba(9, 12, 10, 0.93);
+    --c-popup-fill: rgba(10, 13, 12, 0.96);
+    --c-strip-fill: rgba(10, 13, 12, 0.92);
+    --c-tape-dark: #16100e;
+    --c-quality-0: #aeb3a8;
+    --c-quality-1: #8fd694;
+    --c-quality-2: #5aa9e6;
+    --c-quality-3: #f2c94c;
+    --c-quality-4: #c38cf0;
+
+    /* UILayout と同じ値にする */
+    --top-height: 56px;
+    --bottom-height: 150px;
+    --low-talk-top: 684px;
+
+    color: var(--c-text);
+    font-size: 13px;
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.cinematic > #ticker-screen,
+.cinematic > #top-bar-screen,
+.cinematic > #operations-screen,
+.cinematic > #side-panel-screen,
+.cinematic > #edge-hint-screen,
+.cinematic > #build-list-screen,
+.cinematic > #build-tape-screen,
+.cinematic > #room-panel-screen,
+.cinematic > #route,
+.cinematic > #placing-screen,
+.cinematic > #room-menu-screen {
+    display: none;
+}
+
+.on-title > #wave-banner-screen,
+.on-title > #edge-hint-screen,
+.on-title > #ticker-screen,
+.on-title > #top-bar-screen,
+.on-title > #operations-screen,
+.on-title > #build-list-screen,
+.on-title > #side-panel-screen,
+.on-title > #room-panel-screen,
+.on-title > #route,
+.on-title > #placing-screen,
+.on-title > #build-tape-screen,
+.on-title > #room-menu-screen,
+.on-title > #tutorial-screen {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.panel {
+    background-color: var(--c-panel-fill);
+}
+
+.dim { color: var(--c-dim); }
+.bright { color: var(--c-bright); }
+.warn { color: var(--c-warn); }
+.caution { color: var(--c-caution); }
+.amber { color: var(--c-amber); }
+.cyan { color: var(--c-cyan); }
+.ok { color: var(--c-ok); }
+.bold { -unity-font-style: bold; }
+
+.quality-0 { color: var(--c-quality-0); }
+.quality-1 { color: var(--c-quality-1); }
+.quality-2 { color: var(--c-quality-2); }
+.quality-3 { color: var(--c-quality-3); }
+.quality-4 { color: var(--c-quality-4); }
+
+.unity-text-element {
+    -unity-font-definition: url("/Assets/Art/Fonts/ScrapwalkerUI.asset");
+}
+
+.unity-label {
+    padding: 0;
+    margin: 0;
+    white-space: normal;
+}
+
+/* .unity-label より後に置く */
+.nowrap { white-space: nowrap; }
+
+Label {
+    padding: 0;
+    margin: 0;
+    -unity-text-align: upper-left;
+    white-space: normal;
+}
+
+
+.btn {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 2px 7px;
+    border-width: 1px;
+    border-radius: 3px;
+    --btn-edge: var(--c-button-border);
+    border-color: var(--btn-edge);
+    background-color: var(--c-button-fill);
+    color: var(--c-text);
+    font-size: 13px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+}
+
+.unity-button.unity-button.unity-button:focus {
+    border-color: var(--btn-edge);
+}
+
+.btn > Label {
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+}
+
+.btn--selected {
+    --btn-edge: var(--c-amber);
+    color: var(--c-amber);
+}
+
+.btn--selected > .icon {
+    -unity-background-image-tint-color: var(--c-amber);
+}
+
+.tab.tab--selected {
+    --btn-edge: var(--c-amber);
+    color: var(--c-amber);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+}
+
+.btn--cyan {
+    --btn-edge: var(--c-cyan);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn--cyan > Label {
+    color: var(--c-cyan);
+}
+
+.btn--accent-cyan {
+    --btn-edge: var(--c-cyan);
+    background-color: rgba(76, 201, 224, 0.08);
+}
+
+.btn--accent-amber {
+    --btn-edge: var(--c-amber);
+    background-color: rgba(232, 163, 61, 0.08);
+}
+
+.btn.btn--unusable.btn--unusable {
+    --btn-edge: var(--c-button-border);
+    background-color: var(--c-button-fill);
+    color: var(--c-dim);
+}
+
+.btn.btn--unusable.btn--unusable Label {
+    color: var(--c-dim);
+}
+
+.btn.btn--unusable.btn--unusable .icon {
+    -unity-background-image-tint-color: var(--c-dim);
+}
+
+.btn.btn--unusable.btn--unusable .corner {
+    border-color: var(--c-button-border);
+}
+
+.btn--danger {
+    --btn-edge: var(--c-warn);
+    color: var(--c-warn);
+}
+
+.gradient {
+    background-image: url("/Assets/Art/UI/gradient.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    -unity-background-image-tint-color: var(--c-text);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.icon--build { background-image: url("/Assets/Art/UI/Icons/build.png"); }
+.icon--close { background-image: url("/Assets/Art/UI/Icons/close.png"); }
+.icon--depart { background-image: url("/Assets/Art/UI/Icons/depart.png"); }
+.icon--route { background-image: url("/Assets/Art/UI/Icons/route.png"); }
+.icon--stock { background-image: url("/Assets/Art/UI/Icons/stock.png"); }
+.icon--bots { background-image: url("/Assets/Art/UI/Icons/bots.png"); }
+.icon--settings { background-image: url("/Assets/Art/UI/Icons/settings.png"); }
+.icon--menu { background-image: url("/Assets/Art/UI/Icons/menu.png"); }
+.icon--pause { background-image: url("/Assets/Art/UI/Icons/pause.png"); }
+.icon--play { background-image: url("/Assets/Art/UI/Icons/play.png"); }
+.icon--fast { background-image: url("/Assets/Art/UI/Icons/fast.png"); }
+.icon--faster { background-image: url("/Assets/Art/UI/Icons/faster.png"); }
+.icon--filter { background-image: url("/Assets/Art/UI/Icons/filter.png"); }
+.icon--tri-right { background-image: url("/Assets/Art/UI/Icons/triangle-right.png"); }
+.icon--tri-left { background-image: url("/Assets/Art/UI/Icons/triangle-left.png"); }
+.icon--tri-down { background-image: url("/Assets/Art/UI/Icons/triangle-down.png"); }
+
+.corners {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.corner {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-color: var(--c-amber);
+}
+
+.corner--tl { left: 0; top: 0; border-left-width: 2px; border-top-width: 2px; }
+.corner--tr { right: 0; top: 0; border-right-width: 2px; border-top-width: 2px; }
+.corner--bl { left: 0; bottom: 0; border-left-width: 2px; border-bottom-width: 2px; }
+.corner--br { right: 0; bottom: 0; border-right-width: 2px; border-bottom-width: 2px; }
+
+.corners-host {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+}
+
+.bar {
+    flex-shrink: 0;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--c-bar-border);
+    background-color: var(--c-bar);
+    overflow: hidden;
+}
+
+.bar__fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+}
+
+.job-bar__ready {
+    background-color: var(--c-ready-dim);
+}
+
+.job-bar__progress {
+    background-color: var(--c-waiting);
+}
+
+.job-bar--active > .job-bar__ready {
+    background-color: var(--c-ready);
+}
+
+.job-bar--active > .job-bar__progress {
+    background-color: var(--c-amber);
+}
+
+.section {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--c-section-rule);
+}
+
+.section__mark {
+    width: 3px;
+    height: 14px;
+    margin-right: 6px;
+    background-color: var(--c-amber);
+}
+
+.section__title {
+    font-size: 14px;
+    color: var(--c-dim);
+}
+
+.mat {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.mat--delivered {
+    color: var(--c-delivered);
+}
+
+.mat--plain > .mat__need {
+    display: none;
+}
+
+.mat--plain > .mat__have {
+    color: var(--c-text);
+}
+
+.mats--small .mat {
+    margin-bottom: 2.5px;
+}
+
+.mats--small .mat__name,
+.mats--small .mat__need,
+.mats--small .mat--plain > .mat__have {
+    font-size: 13px;
+}
+
+.mats--small .mat__need {
+    margin-left: 3px;
+}
+
+.mats--small .mat__have {
+    font-size: 11px;
+}
+
+.mats--small .mat--plain > .mat__have {
+    margin-left: 3px;
+}
+
+.mats--medium .mat {
+    min-height: 20px;
+}
+
+.mats--medium .mat__name,
+.mats--medium .mat__need {
+    font-size: 14.4px;
+}
+
+.mats--medium .mat__need {
+    margin-left: 4px;
+}
+
+.mats--medium .mat__have {
+    font-size: 12.2px;
+}
+
+.mats--large .mat {
+    margin-bottom: 2px;
+}
+
+.mats--large .mat__name,
+.mats--large .mat__need {
+    font-size: 17px;
+}
+
+.mats--large .mat__need {
+    margin-left: 4px;
+}
+
+.mats--large .mat__have {
+    font-size: 14.5px;
+}
+
+.stock {
+    flex-direction: row;
+    align-items: center;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.stock__name {
+    flex-shrink: 0;
+    width: 104px;
+    margin-right: 8px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.stock__count {
+    flex-shrink: 0;
+    width: 40px;
+    margin-right: 10px;
+    font-size: 14px;
+    -unity-text-align: upper-right;
+}
+
+.stock__breakdown {
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loot,
+.loot__item {
+    flex-direction: row;
+    align-items: center;
+}
+
+.dash-frame {
+    border-width: 0;
+    background-image: url("/Assets/Art/UI/dash-frame.png");
+    -unity-slice-left: 4;
+    -unity-slice-right: 4;
+    -unity-slice-top: 4;
+    -unity-slice-bottom: 4;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #6d7a72;
+}
+
+.stock__dash {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-image: url("/Assets/Art/UI/dash.png");
+    background-size: 4px 1px;
+    background-repeat: repeat no-repeat;
+    -unity-background-image-tint-color: var(--c-bar);
+}
+
+.art-thumb {
+    overflow: hidden;
+}
+
+.art-thumb__layer {
+    position: absolute;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.art-thumb--dim .art-thumb__layer {
+    -unity-background-image-tint-color: rgb(140, 140, 140);
+}
+
+.art-thumb__frame {
+    position: absolute;
+    border-width: 1px;
+    border-color: #46515a;
+}
+
+.art-thumb--dim .art-thumb__frame {
+    border-color: rgb(38, 44, 49);
+}

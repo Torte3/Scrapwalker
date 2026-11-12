@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Window" src="../../Widgets/Window.uxml" />
+    <ui:Template name="DestinationCard" src="DestinationCard.uxml" />
+    <Style src="Route.uss" />
+    <ui:Instance template="Window" name="route-window" class="layer" picking-mode="Ignore">
+        <ui:ScrollView name="route-list" mode="Vertical" horizontal-scroller-visibility="Hidden" class="route-list">
+            <ui:Instance template="DestinationCard" name="card-template" />
+        </ui:ScrollView>
+    </ui:Instance>
+</ui:UXML>

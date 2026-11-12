@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc2bf0602ff4f5c9be3d5536498b6f0, type: 3}
+  m_Name: Mine
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 7724964b80574fee97ed68d1ddd539c1
+    Requires:
+    - ID: 2b935fbd819046d1966776b13a89d1c4
+    Plan:
+      rid: 2651288262038573095
+    Waves:
+    - Enemies:
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 0
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 2
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 4
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 6
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 8
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 10
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 12
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 14
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 16
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 18
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 20
+      LootReference:
+        ID: c5db7d04278d29c468ed8f81b1188c64
+      RetreatSeconds: 40
+    - Enemies:
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 0
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 1.7
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 3.3
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 5
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 6.7
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 8.3
+      - EnemyReference:
+          ID: ed01e880df1941ec85e0a9ed716e3b21
+        At: 10
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 11.7
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 13.3
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 15
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 16.7
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 18.3
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 20
+      LootReference:
+        ID: eb38757d208acdd42a0299d1752a00d5
+      RetreatSeconds: 40
+    - Enemies:
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 0
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 1.5
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 3.1
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 4.6
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 6.2
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 7.7
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 9.2
+      - EnemyReference:
+          ID: ed01e880df1941ec85e0a9ed716e3b21
+        At: 10.8
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 12.3
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 13.8
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 15.4
+      - EnemyReference:
+          ID: 57039f10ac024646b207bbade2f63034
+        At: 16.9
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 18.5
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 20
+      LootReference:
+        ID: 73778e48dd0c99745af2a5688cd94478
+      RetreatSeconds: 40
+    - Enemies:
+      - EnemyReference:
+          ID: 7f7bb03cb2ea4633a814e5a666fb157e
+        At: 0
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 3
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 5.5
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 8
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 10.5
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 13
+      - EnemyReference:
+          ID: b8d46a532b4d43b0b45f26be0bf25466
+        At: 15.5
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 4
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 7
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 10
+      - EnemyReference:
+          ID: b2adeb80661441c1b08b822dd973fd73
+        At: 13
+      LootReference:
+        ID: cfec6fd57d75dd7499fd18cabf64ed4a
+      RetreatSeconds: 120
+    QualityWeights: 0100000000000000000000000000000000000000
+    MainItems:
+    - ID: d43c0956ff734843b894f811f16bc68f
+    - ID: 9b4c9c6b787c44d68d950514a1e1eaed
+    - ID: f3f9282c0c474ca399f0e38c51d56002
+    Talks:
+    - Cue: 6
+      Delay: 0
+      Lines:
+      - Face: 0
+        Text: "\u9732\u5929\u6398\u308A\u306E\u9271\u5C71\u3067\u3059\u3002\n{items}\u304C\u6398\u308C\u305D\u3046\u3067\u3059\u3002"
+      - Face: 0
+        Text: "\u5927\u304D\u306A\u6398\u524A\u6A5F\u306E\u53CD\u5FDC\u304C\u3042\u308A\u307E\u3059\u3002"
+  _name: "\u9732\u5929\u6398\u308A\u306E\u9271\u5C71"
+  _music: {fileID: 8300000, guid: 9d3c34c912fb4e9ab2f48072a84fc342, type: 3}
+  _picture: {fileID: 8217432651162208264, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  _back: {fileID: -1343939437764382269, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  _front: {fileID: -4554977023319778494, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2651288262038573095
+      type: {class: SalvagePlan, ns: Scrapwalker.Core.Combat.Waves, asm: Scrapwalker.Core}
+      data: 

@@ -1,0 +1,69 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="MaterialLine" src="../../Widgets/Materials/MaterialLine.uxml" />
+    <ui:Template name="QualityFilterIcon" src="../../Widgets/QualityFilters/QualityFilterIcon.uxml" />
+    <ui:Template name="QualityFilterEditor" src="../../Widgets/QualityFilters/QualityFilterEditor.uxml" />
+    <Style src="Placing.uss" />
+    <ui:VisualElement name="placing-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="placing" class="placing hidden">
+            <ui:Button name="back" class="btn placing__back">
+                <ui:Label name="back-label" class="placing__back-label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:VisualElement name="move" class="placing__item">
+                <ui:VisualElement class="section">
+                    <ui:VisualElement class="section__mark" />
+                    <ui:Label name="move-title" class="section__title placing__title nowrap" />
+                    <ui:Label name="move-size" class="placing__head-right nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement class="placing__section-body">
+                    <ui:Label name="move-name" class="placing__name" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="build" class="placing__build">
+                <ui:VisualElement class="placing__item">
+                    <ui:VisualElement class="section">
+                        <ui:VisualElement class="section__mark" />
+                        <ui:Label name="build-title" class="section__title placing__title nowrap" />
+                        <ui:Label name="build-head" class="placing__head-right nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="placing__section-body">
+                        <ui:Label name="build-name" class="placing__name" />
+                        <ui:VisualElement class="placing__preview-area">
+                            <ui:VisualElement name="preview" class="placing__preview" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="need" class="placing__item">
+                    <ui:VisualElement class="section">
+                        <ui:VisualElement class="section__mark" />
+                        <ui:Label name="need-title" class="section__title placing__title nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="placing__section-body">
+                        <ui:VisualElement name="costs" class="placing__costs mats--small">
+                            <ui:Instance template="MaterialLine" name="cost-row-template" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="filter-slot" class="placing__filter-slot">
+                            <ui:VisualElement class="placing__row placing__filter-row">
+                                <ui:Label name="use-quality-key" class="placing__row-key" />
+                                <ui:Instance template="QualityFilterIcon" name="filter-icon" />
+                            </ui:VisualElement>
+                            <ui:Instance template="QualityFilterEditor" name="filter-editor" class="placing__filter-editor" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="placing__item">
+                    <ui:VisualElement class="section">
+                        <ui:VisualElement class="section__mark" />
+                        <ui:Label name="result-title" class="section__title placing__title nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="placing__section-body">
+                        <ui:VisualElement class="placing__row">
+                            <ui:Label name="quality-key" class="placing__row-key" />
+                            <ui:Label name="quality" class="placing__row-value" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label name="block" class="placing__item placing__message" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

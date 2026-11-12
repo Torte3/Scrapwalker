@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:ScrollView name="register" class="room-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+        <ui:VisualElement name="store-group" class="room-stack">
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section__mark" />
+                <ui:Label name="store-title" class="section__title nowrap" />
+            </ui:VisualElement>
+            <ui:VisualElement class="room-key-value">
+                <ui:Label name="capacity-key" class="room-key" />
+                <ui:Label name="capacity" class="room-value" />
+            </ui:VisualElement>
+            <ui:VisualElement class="bar room-bar job-bar job-bar--active">
+                <ui:VisualElement name="capacity-fill" class="bar__fill job-bar__progress" />
+            </ui:VisualElement>
+            <ui:VisualElement name="stock-lines" class="room-stack room-flat" />
+            <ui:Label name="store-empty" class="room-note" />
+        </ui:VisualElement>
+        <ui:VisualElement name="task-group" class="room-stack">
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section__mark" />
+                <ui:Label name="task-title" class="section__title nowrap" />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-rows" class="room-stack room-flat" />
+            <ui:Label name="task-empty" class="room-note" />
+        </ui:VisualElement>
+        <ui:VisualElement name="upgrade-group" class="room-stack">
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section__mark" />
+                <ui:Label name="upgrade-title" class="section__title nowrap" />
+            </ui:VisualElement>
+            <ui:VisualElement name="upgrade-rows" class="room-stack room-flat" />
+            <ui:Label name="upgrade-empty" class="room-note" />
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section__mark" />
+                <ui:Label name="done-title" class="section__title nowrap" />
+            </ui:VisualElement>
+            <ui:VisualElement name="done-rows" class="room-stack room-flat" />
+            <ui:Label name="done-empty" class="room-note" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Window" src="../../Widgets/Window.uxml" />
+    <ui:Template name="SaveRow" src="SaveRow.uxml" />
+    <Style src="Save.uss" />
+    <ui:VisualElement name="save" class="layer save" picking-mode="Ignore">
+        <ui:Instance template="Window" name="save-window" class="layer" picking-mode="Ignore">
+            <ui:VisualElement name="rows" class="save__rows">
+                <ui:Instance template="SaveRow" name="save-row-template" />
+            </ui:VisualElement>
+            <ui:VisualElement class="save__foot">
+                <ui:Button name="start" class="btn save__start">
+                    <ui:Label name="start-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:Instance>
+    </ui:VisualElement>
+</ui:UXML>

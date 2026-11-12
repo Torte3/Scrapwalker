@@ -1,0 +1,28 @@
+{
+ "name": "bg/night/sky",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": 0,
+     "y": 0,
+     "w": 24,
+     "h": 2058
+    }
+   ]
+  }
+ ]
+}

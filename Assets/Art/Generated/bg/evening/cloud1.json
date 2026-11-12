@@ -1,0 +1,28 @@
+{
+ "name": "bg/evening/cloud1",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -161.84081741896185,
+     "y": -30.149551886824373,
+     "w": 971,
+     "h": 181
+    }
+   ]
+  }
+ ]
+}

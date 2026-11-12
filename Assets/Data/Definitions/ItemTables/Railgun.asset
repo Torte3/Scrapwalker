@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 045b4b947052487fb7cb5cdd8573d101, type: 3}
+  m_Name: Railgun
+  m_EditorClassIdentifier: Scrapwalker.Game::Scrapwalker.Game.Definitions.ItemTableAsset
+  _definition:
+    ID: 0604662cd005b93458e06fa3267c7d74
+    Rows:
+    - Min: 5
+      Max: 5
+      Entries:
+      - TypeReference:
+          ID: 399cf8da889c46a38edeec64d038a68e
+        Weight: 1
+    - Min: 1
+      Max: 1
+      Entries:
+      - TypeReference:
+          ID: e11b3d77bf8b489aa749e5e52e6fee5d
+        Weight: 1
+    - Min: 1
+      Max: 1
+      Entries:
+      - TypeReference:
+          ID: 6b5e469fd0874a0f93b980fc66052c6b
+        Weight: 1

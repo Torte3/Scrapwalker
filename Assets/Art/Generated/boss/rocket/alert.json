@@ -1,0 +1,192 @@
+{
+ "name": "boss/rocket/alert",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "chassis",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "chassis.png",
+     "t": 0,
+     "x": -92,
+     "y": -30,
+     "w": 552,
+     "h": 90
+    }
+   ]
+  },
+  {
+   "name": "tread",
+   "anim": {
+    "mode": "loop",
+    "period": 24,
+    "frames": 12
+   },
+   "ctl": {
+    "kind": "loop",
+    "when": "move"
+   },
+   "ctlText": "{\"kind\":\"loop\",\"when\":\"move\"}",
+   "frames": [
+    {
+     "file": "tread_0.png",
+     "t": 0,
+     "x": -93,
+     "y": -30,
+     "w": 555,
+     "h": 12
+    },
+    {
+     "file": "tread_1.png",
+     "t": 2,
+     "x": -94,
+     "y": -30,
+     "w": 555,
+     "h": 12
+    },
+    {
+     "file": "tread_2.png",
+     "t": 4,
+     "x": -95,
+     "y": -30,
+     "w": 555,
+     "h": 12
+    },
+    {
+     "file": "tread_3.png",
+     "t": 6,
+     "x": -96,
+     "y": -30,
+     "w": 555,
+     "h": 12
+    },
+    {
+     "file": "tread_4.png",
+     "t": 8,
+     "x": -85,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_5.png",
+     "t": 10,
+     "x": -86,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_6.png",
+     "t": 12,
+     "x": -87,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_7.png",
+     "t": 14,
+     "x": -88,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_8.png",
+     "t": 16,
+     "x": -89,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_9.png",
+     "t": 18,
+     "x": -90,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_10.png",
+     "t": 20,
+     "x": -91,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    },
+    {
+     "file": "tread_11.png",
+     "t": 22,
+     "x": -92,
+     "y": -30,
+     "w": 519,
+     "h": 12
+    }
+   ]
+  },
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -77,
+     "y": -77,
+     "w": 492,
+     "h": 120
+    }
+   ]
+  },
+  {
+   "name": "tubes",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "tubes.png",
+     "t": 0,
+     "x": -78.66666666666666,
+     "y": -144,
+     "w": 293,
+     "h": 214
+    }
+   ]
+  },
+  {
+   "name": "glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": null,
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "glow.png",
+     "t": 0,
+     "x": -79,
+     "y": -87,
+     "w": 459,
+     "h": 145
+    }
+   ]
+  }
+ ]
+}

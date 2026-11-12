@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: Barrier
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 6cb683c79ac74ff2b88d6105c0b39fd5
+    Width: 1
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: e8728c8a1fc040e5b500fed8eee625f2
+      Count: 1
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 2
+    Recipes:
+    - ID: a86d30ee-e2e2-4c5f-a917-3522a42cb3be
+      Inputs:
+      - TypeReference:
+          ID: 546193e942144c4e9427fabc3b72cad1
+        Count: 1
+      - TypeReference:
+          ID: e18b2792232d49deb107ad98aeac4537
+        Count: 1
+      Source:
+        rid: 4400167715198645673
+      Result:
+        rid: 2277608602260395276
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: f061d3cafecb4ae6840eda908f5ace64
+    IsIndestructible: 0
+    Stats:
+    - Stat: 2
+      Amount: 50
+    - Stat: 3
+      Amount: 4
+    Roles:
+    - rid: 4192300476115817309
+  _name: "\u96FB\u78C1\u30D0\u30EA\u30A2"
+  _recipes:
+  - _recipe: a86d30ee-e2e2-4c5f-a917-3522a42cb3be
+    _name: "\u5F37\u53161"
+  _look:
+    _category: 2
+    _act:
+      rid: 8582828082362047979
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: 7631087710597073396
+    _idle: {fileID: 2599780022721785292, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: 2467734590306529502, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: -2444080512407419032, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2277608602260395276
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 2
+          Amount: 50
+    - rid: 4400167715198645673
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 4192300476115817309
+      type: {class: BarrierRole, ns: Scrapwalker.Core.Outpost.Roles, asm: Scrapwalker.Core}
+      data: 
+    - rid: 7631087710597073396
+      type: {class: FillGauge, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _steps: 4
+        _roundsUp: 1
+    - rid: 8582828082362047979
+      type: {class: ActWhileOperational, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

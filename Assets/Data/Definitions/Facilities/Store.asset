@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: Store
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 398f6ced536a471fb64451424eb9fb5c
+    Width: 1
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 4
+    - TypeReference:
+        ID: 7f2e26054a3843808f9a3c76f69beadb
+      Count: 2
+    Recipes:
+    - ID: 5a62b6c2-e065-40e5-a095-429d5898eb60
+      Inputs:
+      - TypeReference:
+          ID: 6b5e469fd0874a0f93b980fc66052c6b
+        Count: 4
+      - TypeReference:
+          ID: 7f2e26054a3843808f9a3c76f69beadb
+        Count: 2
+      Source:
+        rid: 1621726320683032593
+      Result:
+        rid: 2183662720696699176
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    - ID: d1834675-825b-46d1-808a-de4d1a078aa1
+      Inputs:
+      - TypeReference:
+          ID: 169b0e8e64c4402ea39e46d9c6abf60b
+        Count: 2
+      - TypeReference:
+          ID: 6596430ca2a14622ae886c9ee9d86e54
+        Count: 2
+      Source:
+        rid: 3170765283982553704
+      Result:
+        rid: 2200948218695680713
+      Seconds: 10
+      Energy: 0
+      Requires:
+      - rid: 6334558070414416200
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: 
+    IsIndestructible: 0
+    Stats:
+    - Stat: 0
+      Amount: 160
+    Roles:
+    - rid: 6832037573830363855
+  _name: "\u8CC7\u6750\u5EAB"
+  _recipes:
+  - _recipe: 5a62b6c2-e065-40e5-a095-429d5898eb60
+    _name: "\u5BB9\u91CF\u306E\u62E1\u5F351"
+  - _recipe: d1834675-825b-46d1-808a-de4d1a078aa1
+    _name: "\u5BB9\u91CF\u306E\u62E1\u5F352"
+  _look:
+    _category: 3
+    _act:
+      rid: 4983696341838707610
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: 7887672244994972719
+    _idle: {fileID: 1007925198252099248, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: 6633173829128989685, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: -2444080512407419032, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1621726320683032593
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2183662720696699176
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 0
+          Amount: 80
+    - rid: 2200948218695680713
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 0
+          Amount: 80
+    - rid: 3170765283982553704
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 6334558070414416200
+      type: {class: PreviousRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        Recipe: 5a62b6c2-e065-40e5-a095-429d5898eb60
+    - rid: 6832037573830363855
+      type: {class: StorageRole, ns: Scrapwalker.Core.Outpost.Roles, asm: Scrapwalker.Core}
+      data: 
+    - rid: 7887672244994972719
+      type: {class: StoredGauge, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _material: {fileID: 11400000, guid: 360a794ab2e54c5393a1a6c3d7dd139e, type: 2}
+    - rid: 4983696341838707610
+      type: {class: ActWhileWorking, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

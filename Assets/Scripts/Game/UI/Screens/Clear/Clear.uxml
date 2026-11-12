@@ -1,0 +1,67 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Corners" src="../../Widgets/Corners.uxml" />
+    <Style src="Clear.uss" />
+    <ui:VisualElement name="clear" class="layer clear hidden">
+        <ui:VisualElement name="clear-window" class="clear__window">
+            <ui:Instance template="Corners" class="corners-host clear__corners" picking-mode="Ignore" />
+            <ui:Label name="title-label" class="clear__title nowrap" picking-mode="Ignore" />
+            <ui:VisualElement class="clear__rule clear__rule--head" picking-mode="Ignore" />
+            <ui:Label name="time-label" class="clear__time-label" picking-mode="Ignore" />
+            <ui:Label name="time" class="clear__time nowrap" picking-mode="Ignore" />
+            <ui:VisualElement class="clear__rule" picking-mode="Ignore" />
+            <ui:VisualElement class="clear__grid" picking-mode="Ignore">
+                <ui:VisualElement class="clear__rows" picking-mode="Ignore">
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="ruins-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="ruins" class="clear__number nowrap" picking-mode="Ignore" />
+                            <ui:Label name="ruins-total" class="clear__total nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="research-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="research" class="clear__number nowrap" picking-mode="Ignore" />
+                            <ui:Label name="research-total" class="clear__total nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="rooms-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="rooms" class="clear__number nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="bots-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="bots" class="clear__number nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="clear__rows clear__rows--right" picking-mode="Ignore">
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="kills-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="kills" class="clear__number nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="materials-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="materials" class="clear__number nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="clear__row" picking-mode="Ignore">
+                        <ui:Label name="waves-label" class="clear__key" picking-mode="Ignore" />
+                        <ui:VisualElement class="clear__value" picking-mode="Ignore">
+                            <ui:Label name="waves" class="clear__number nowrap" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="next" class="btn btn--accent-amber clear__next">
+                <ui:Label name="next-label" class="clear__next-label" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

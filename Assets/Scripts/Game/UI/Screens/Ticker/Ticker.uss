@@ -1,0 +1,40 @@
+.ticker {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--bottom-height);
+    height: 40px;
+    background-color: rgba(8, 11, 10, 0.8);
+    overflow: hidden;
+}
+
+.ticker-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ticker-item__mark {
+    flex-shrink: 0;
+    width: 4px;
+    height: 18px;
+    background-color: var(--c-dim);
+}
+
+.ticker-item__text {
+    flex-shrink: 0;
+    margin-left: 8px;
+    font-size: 19px;
+    -unity-text-align: middle-left;
+}
+
+.ticker-item__items {
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-left: 19px;
+    font-size: 19px;
+    -unity-text-align: middle-left;
+}

@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: ElectricGun
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: f30a8400f05149e882c1e54cb27587d8
+    Width: 2
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: 2eeb3043dea74dfcad351466cbdae2bf
+      Count: 1
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 2
+    - TypeReference:
+        ID: e18b2792232d49deb107ad98aeac4537
+      Count: 1
+    Recipes:
+    - ID: af319344-65b1-4a90-b4f8-d803a5894d50
+      Inputs: []
+      Source:
+        rid: 3640078125379664880
+      Result:
+        rid: 1554752813680990855
+      Seconds: 0.9
+      Energy: 40
+      Requires: []
+      IsOneOff: 0
+      When: 1
+      IsUnmanned: 0
+    - ID: 6c1f0a52-3d7e-4b9a-9f2e-5a8d7c41e0b3
+      Inputs: []
+      Source:
+        rid: 2328468016697350262
+      Result:
+        rid: 1359333116675959528
+      Seconds: 0.9
+      Energy: 40
+      Requires: []
+      IsOneOff: 0
+      When: 1
+      IsUnmanned: 0
+    - ID: fa0c0fdd-fb28-4dbb-989b-cfe7f8ae9ecb
+      Inputs:
+      - TypeReference:
+          ID: caef98619db145a0aee4dc5ac85b9b67
+        Count: 3
+      - TypeReference:
+          ID: 0a3c766ca518493eb001434151eb24be
+        Count: 1
+      Source:
+        rid: 1570677488591047816
+      Result:
+        rid: 2581074457918367495
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    - ID: dbfa4e2a-495e-4027-9bcd-6396572bfa36
+      Inputs:
+      - TypeReference:
+          ID: 0a3c766ca518493eb001434151eb24be
+        Count: 2
+      - TypeReference:
+          ID: e18b2792232d49deb107ad98aeac4537
+        Count: 2
+      Source:
+        rid: 4286481331004334287
+      Result:
+        rid: 3689776853885730940
+      Seconds: 10
+      Energy: 0
+      Requires:
+      - rid: 8588819296361937357
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: 34268c55cd224bc0916358b92f5f78ac
+    IsIndestructible: 0
+    Stats: []
+    Roles:
+    - rid: 1025888416912655055
+  _name: "\u30EC\u30FC\u30B6\u30FC\u30AD\u30E3\u30CE\u30F3"
+  _recipes:
+  - _recipe: af319344-65b1-4a90-b4f8-d803a5894d50
+    _name: "\u5C04\u6483"
+  - _recipe: 6c1f0a52-3d7e-4b9a-9f2e-5a8d7c41e0b3
+    _name: "\u8DB3\u6B62\u3081"
+  - _recipe: fa0c0fdd-fb28-4dbb-989b-cfe7f8ae9ecb
+    _name: "\u5A01\u529B\u306E\u5F37\u53161"
+  - _recipe: dbfa4e2a-495e-4027-9bcd-6396572bfa36
+    _name: "\u5A01\u529B\u306E\u5F37\u53162"
+  _look:
+    _category: 1
+    _act:
+      rid: 6616781507468053607
+    _unlabeled: 0
+    _station:
+      rid: 2477871642422644785
+    _weapon:
+      rid: 4445575017703689068
+    _gauge:
+      rid: -2
+    _idle: {fileID: 8202375577526258725, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: -8020236007338612259, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: -2059531402432851157, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _damage: {fileID: 6115477401461775574, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1359333116675959528
+      type: {class: ShotResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Shot:
+          Damage: 0
+          DamagePerUpgrade: 0
+          Radius: 3
+          Depth: 0
+          MaxTargets: 0
+          ArmorPiercing: 0
+          Knockback: 0
+          Rounds: 1
+          RoundSeconds: 0
+          Slow:
+            Factor: 0.3
+            Seconds: 5
+    - rid: 1554752813680990855
+      type: {class: ShotResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Shot:
+          Damage: 30
+          DamagePerUpgrade: 10
+          Radius: 1
+          Depth: 0
+          MaxTargets: 1
+          ArmorPiercing: 0
+          Knockback: 0
+          Rounds: 1
+          RoundSeconds: 0
+          Slow:
+            Factor: 1
+            Seconds: 0
+    - rid: 1570677488591047816
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2328468016697350262
+      type: {class: StoreInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2581074457918367495
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 7
+          Amount: 1
+    - rid: 3640078125379664880
+      type: {class: StoreInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3689776853885730940
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 7
+          Amount: 1
+    - rid: 4286481331004334287
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 8588819296361937357
+      type: {class: PreviousRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        Recipe: fa0c0fdd-fb28-4dbb-989b-cfe7f8ae9ecb
+    - rid: 1025888416912655055
+      type: {class: WeaponRole, ns: Scrapwalker.Core.Outpost.Roles, asm: Scrapwalker.Core}
+      data:
+        Barrel:
+          ShotCellsPerSecond: 200
+          ShareOfWidth: 0.95
+        AutoRepeat: af319344-65b1-4a90-b4f8-d803a5894d50
+    - rid: 2477871642422644785
+      type: {class: StationLook, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _dx: -46
+        _onDeck: 0
+    - rid: 4445575017703689068
+      type: {class: WeaponLook, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _recoilFrames: 8
+        _shot:
+          _flight:
+            rid: 7379460083225730132
+          _muzzleAnchorY: 0.5
+          _muzzleOffsetY: 6
+          _hitHeight: 22
+          _muzzle:
+            _count: 0
+            _vxMin: 0
+            _vxMax: 0
+            _vyMin: 0
+            _vyMax: 0
+            _lifeFrames: 0
+            _color: {r: 0, g: 0, b: 0, a: 0}
+            _size: 0
+            _gravity: 0
+          _hit:
+            _count: 0
+            _vxMin: 0
+            _vxMax: 0
+            _vyMin: 0
+            _vyMax: 0
+            _lifeFrames: 0
+            _color: {r: 0, g: 0, b: 0, a: 0}
+            _size: 0
+            _gravity: 0
+        _fire: {fileID: 360290844970991778, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+        _sounds:
+          _fire:
+            _clip: {fileID: 8300000, guid: 760be0a06e4c4e128f3396dd3fc42bbd, type: 3}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 3
+          _firing:
+            _loop:
+              _clip: {fileID: 0}
+              _volumeDecibels: 0
+              _pitchJitter: 0
+              _maxVoices: 0
+            _accent:
+              _clip: {fileID: 0}
+              _volumeDecibels: 0
+              _pitchJitter: 0
+              _maxVoices: 0
+            _accentMinSeconds: 0
+            _accentMaxSeconds: 0
+          _firingHoldSeconds: 0
+          _land:
+            _clip: {fileID: 0}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+    - rid: 6616781507468053607
+      type: {class: ActWhileWorking, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: 7379460083225730132
+      type: {class: BoltFlight, ns: Scrapwalker.Game.Definitions.Flights, asm: Scrapwalker.Game}
+      data:
+        _lineColor: {r: 0.29803923, g: 0.7882353, b: 0.8784314, a: 1}
+        _lineCore: {r: 0.85490197, g: 0.9843137, b: 1, a: 1}
+    - rid: -2
+      type: {class: , ns: , asm: }

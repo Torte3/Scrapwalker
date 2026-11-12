@@ -1,0 +1,57 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="Corners" src="../../Widgets/Corners.uxml" />
+    <ui:Template name="SideStockLine" src="SideStockLine.uxml" />
+    <ui:Template name="BotRow" src="BotRow.uxml" />
+    <Style src="SidePanel.uss" />
+    <ui:VisualElement name="side-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="side-panel" class="side panel hidden">
+            <ui:Instance template="Corners" class="corners-host side__corners" picking-mode="Ignore" />
+            <ui:VisualElement class="side__tabs">
+                <ui:Button name="tab-stock" class="btn tab side__tab">
+                    <ui:Label name="tab-stock-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="tab-bots" class="btn tab side__tab side__gap">
+                    <ui:Label name="tab-bots-label" picking-mode="Ignore" />
+                </ui:Button>
+                <ui:Button name="tab-settings" class="btn tab side__tab side__gap">
+                    <ui:Label name="tab-settings-label" picking-mode="Ignore" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="side__pages">
+                <ui:VisualElement name="page-stock" class="side__page">
+                    <ui:VisualElement class="side__page-head">
+                        <ui:Label name="store-usage" class="side__page-count dim nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="side__page-body">
+                        <ui:ScrollView name="stock-list" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" class="side-stock" />
+                        <ui:Instance template="SideStockLine" name="stock-cell-template" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="page-bots" class="side__page hidden">
+                    <ui:VisualElement class="side__page-head">
+                        <ui:Label name="bot-count" class="side__page-count dim nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="side__page-body">
+                        <ui:ScrollView name="bot-list" mode="Vertical" horizontal-scroller-visibility="Hidden" class="side-bots__list">
+                            <ui:Instance template="BotRow" name="bot-row-template" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="page-settings" class="side__page hidden">
+                    <ui:VisualElement class="side__page-body side-settings">
+                        <ui:VisualElement class="side-settings__row">
+                            <ui:Label name="volume-bgm-name" class="side-settings__name nowrap" />
+                            <ui:Slider name="volume-bgm" low-value="0" high-value="1" class="side-settings__slider" />
+                            <ui:Label name="volume-bgm-value" class="side-settings__value nowrap" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="side-settings__row">
+                            <ui:Label name="volume-se-name" class="side-settings__name nowrap" />
+                            <ui:Slider name="volume-se" low-value="0" high-value="1" class="side-settings__slider" />
+                            <ui:Label name="volume-se-value" class="side-settings__value nowrap" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

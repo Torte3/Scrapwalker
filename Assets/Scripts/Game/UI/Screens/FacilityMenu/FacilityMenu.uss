@@ -1,0 +1,32 @@
+.room-menu {
+    position: absolute;
+    translate: -50% -100%;
+    flex-direction: row;
+    padding: 5px 2px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--c-amber);
+    background-color: var(--c-popup-fill);
+}
+
+.room-menu__choice {
+    width: 142px;
+    height: 40px;
+    margin: 0 3px;
+    background-color: var(--c-popup-fill);
+}
+
+.room-menu__label {
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.room-menu__choice--cyan {
+    --btn-edge: var(--c-cyan);
+    color: var(--c-cyan);
+}
+
+.room-menu__choice--warn {
+    --btn-edge: var(--c-warn);
+    color: var(--c-warn);
+}

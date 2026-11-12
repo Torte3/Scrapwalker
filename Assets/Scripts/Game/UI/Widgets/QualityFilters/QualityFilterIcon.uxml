@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="QualityFilter.uss" />
+    <ui:Button name="quality-filter-icon" class="btn quality-filter-icon">
+        <ui:VisualElement class="icon icon--filter quality-filter-icon__funnel" picking-mode="Ignore" />
+        <ui:VisualElement class="quality-filter-icon__pips" picking-mode="Ignore">
+            <ui:VisualElement class="quality-filter-icon__pip" picking-mode="Ignore">
+                <ui:VisualElement class="icon icon--tri-right quality-filter-icon__mark quality-filter-icon__mark--low" picking-mode="Ignore" />
+                <ui:VisualElement class="icon icon--tri-left quality-filter-icon__mark quality-filter-icon__mark--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-filter-icon__pip" picking-mode="Ignore">
+                <ui:VisualElement class="icon icon--tri-right quality-filter-icon__mark quality-filter-icon__mark--low" picking-mode="Ignore" />
+                <ui:VisualElement class="icon icon--tri-left quality-filter-icon__mark quality-filter-icon__mark--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-filter-icon__pip" picking-mode="Ignore">
+                <ui:VisualElement class="icon icon--tri-right quality-filter-icon__mark quality-filter-icon__mark--low" picking-mode="Ignore" />
+                <ui:VisualElement class="icon icon--tri-left quality-filter-icon__mark quality-filter-icon__mark--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-filter-icon__pip" picking-mode="Ignore">
+                <ui:VisualElement class="icon icon--tri-right quality-filter-icon__mark quality-filter-icon__mark--low" picking-mode="Ignore" />
+                <ui:VisualElement class="icon icon--tri-left quality-filter-icon__mark quality-filter-icon__mark--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-filter-icon__pip" picking-mode="Ignore">
+                <ui:VisualElement class="icon icon--tri-right quality-filter-icon__mark quality-filter-icon__mark--low" picking-mode="Ignore" />
+                <ui:VisualElement class="icon icon--tri-left quality-filter-icon__mark quality-filter-icon__mark--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>

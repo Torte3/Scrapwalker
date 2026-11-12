@@ -1,0 +1,28 @@
+{
+ "name": "bg/morning/cloud6",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -239.39283654049945,
+     "y": -33.520587113152224,
+     "w": 1437,
+     "h": 201
+    }
+   ]
+  }
+ ]
+}

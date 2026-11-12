@@ -1,0 +1,50 @@
+{
+ "name": "base/hull",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "base",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "base.png",
+     "t": 0,
+     "x": 39,
+     "y": 333.3333333333333,
+     "w": 1656,
+     "h": 1061
+    }
+   ]
+  },
+  {
+   "name": "lamp",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "blink",
+    "period": 60,
+    "on": 30
+   },
+   "ctlText": "{\"kind\":\"blink\",\"period\":60,\"on\":30}",
+   "frames": [
+    {
+     "file": "lamp.png",
+     "t": 0,
+     "x": 482,
+     "y": 324,
+     "w": 72,
+     "h": 72
+    }
+   ]
+  }
+ ]
+}

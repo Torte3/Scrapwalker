@@ -1,0 +1,28 @@
+{
+ "name": "item/powder",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -10,
+     "y": -17.57142857142857,
+     "w": 140,
+     "h": 127
+    }
+   ]
+  }
+ ]
+}

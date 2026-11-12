@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="corners" picking-mode="Ignore">
+        <ui:VisualElement class="corner corner--tl" picking-mode="Ignore" />
+        <ui:VisualElement class="corner corner--tr" picking-mode="Ignore" />
+        <ui:VisualElement class="corner corner--bl" picking-mode="Ignore" />
+        <ui:VisualElement class="corner corner--br" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

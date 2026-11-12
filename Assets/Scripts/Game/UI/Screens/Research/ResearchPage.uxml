@@ -1,0 +1,91 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="ResearchNode" src="ResearchNode.uxml" />
+    <ui:Template name="ResearchUnlock" src="ResearchUnlock.uxml" />
+    <ui:Template name="MaterialLine" src="../../Widgets/Materials/MaterialLine.uxml" />
+    <Style src="Research.uss" />
+    <ui:VisualElement name="research-legends" class="research-legends">
+        <ui:VisualElement class="research-legend">
+            <ui:VisualElement class="research-legend__box research-legend__box--done" />
+            <ui:Label name="legend-done" class="research-legend__label nowrap" />
+        </ui:VisualElement>
+        <ui:VisualElement class="research-legend">
+            <ui:VisualElement class="research-legend__box research-legend__box--current" />
+            <ui:Label name="legend-current" class="research-legend__label nowrap" />
+        </ui:VisualElement>
+        <ui:VisualElement class="research-legend">
+            <ui:VisualElement class="research-legend__box research-legend__box--available" />
+            <ui:Label name="legend-available" class="research-legend__label nowrap" />
+        </ui:VisualElement>
+        <ui:VisualElement class="research-legend">
+            <ui:VisualElement class="research-legend__box dash-frame" />
+            <ui:Label name="legend-locked" class="research-legend__label nowrap" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="research-page" class="research-page">
+        <ui:VisualElement class="research-view">
+            <ui:VisualElement name="tree-port" class="research-port">
+                <ui:VisualElement name="tree" class="research-tree" picking-mode="Ignore">
+                    <Scrapwalker.Game.UI.Screens.Research.ResearchLines name="lines" class="research-lines" picking-mode="Ignore" />
+                    <ui:VisualElement name="nodes" class="research-nodes" picking-mode="Ignore">
+                        <ui:Instance template="ResearchNode" name="node-template" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="research-side">
+            <ui:VisualElement name="detail" class="research-card research-card--detail">
+                <ui:Label name="detail-none" class="research-detail__none" />
+                <ui:VisualElement class="research-detail__head">
+                    <ui:Label name="detail-title" class="research-detail__title nowrap" />
+                    <ui:VisualElement name="detail-picture" class="research-detail__picture" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:Label name="detail-status" class="research-detail__status nowrap" />
+                <ui:Label name="requires-title" class="research-sub nowrap" />
+                <ui:VisualElement class="research-pre">
+                    <ui:VisualElement name="pre-0" class="research-pre__tag">
+                        <ui:Label name="pre-text-0" class="research-pre__text nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="pre-1" class="research-pre__tag">
+                        <ui:Label name="pre-text-1" class="research-pre__text nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="pre-2" class="research-pre__tag">
+                        <ui:Label name="pre-text-2" class="research-pre__text nowrap" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="inputs" class="research-mats mats--medium">
+                    <ui:Instance template="MaterialLine" name="input-template" />
+                </ui:VisualElement>
+                <ui:Label name="unlocks-title" class="research-sub nowrap" />
+                <ui:VisualElement name="unlocks" class="research-unlocks">
+                    <ui:Instance template="ResearchUnlock" name="unlock-template" />
+                    <ui:Label name="unlocks-none" class="research-unlocks__none nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement class="research-spacer" />
+                <ui:Button name="act" class="btn research-act btn--cyan">
+                    <ui:Label name="act-label" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="now" class="research-card research-card--now">
+                <ui:Label name="now-title" class="research-sub research-sub--top nowrap" />
+                <ui:VisualElement class="research-now__row">
+                    <ui:Label name="now-name" class="research-now__name nowrap" />
+                    <ui:Label name="now-count" class="research-now__count nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement name="now-bar" class="bar research-now__bar job-bar">
+                    <ui:VisualElement class="bar__fill job-bar__ready" />
+                    <ui:VisualElement class="bar__fill job-bar__progress" />
+                </ui:VisualElement>
+                <ui:VisualElement name="now-mats" class="research-mats mats--medium">
+                    <ui:Instance template="MaterialLine" name="now-input-template" />
+                </ui:VisualElement>
+                <ui:Label name="now-stop" class="research-now__stop bold nowrap" />
+                <ui:VisualElement class="research-spacer" />
+                <ui:Button name="cancel" class="btn research-cancel">
+                    <ui:Label name="cancel-label" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

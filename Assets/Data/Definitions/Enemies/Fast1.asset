@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: Fast1
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: b2adeb80661441c1b08b822dd973fd73
+    TypeReference:
+      ID: 366bfc275da44c8d8656a0211a7ddd6a
+    HP: 12
+    Armor: 0
+    IsBoss: 0
+    AttackMoves:
+    - StyleReference:
+        ID: fe78997101a037cd96d5491d4c62e802
+      Shots: 1
+      HasOneTarget: 0
+      Damage: 2
+      ImpactSeconds: 0
+      GapSeconds: 0
+      TailSeconds: 0
+      RestSeconds: 1
+      Weight: 0
+    DropsReference:
+      ID: 
+  _look:
+    _calm: {fileID: 877851274954804953, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: 7209733984761728127, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: 0}
+    _body: {fileID: 1816789989089720302, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}

@@ -1,0 +1,156 @@
+{
+ "name": "boss/borer/calm",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "body",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "body.png",
+     "t": 0,
+     "x": -21.333333333333343,
+     "y": -74,
+     "w": 530,
+     "h": 350
+    }
+   ]
+  },
+  {
+   "name": "glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": null,
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    null
+   ]
+  },
+  {
+   "name": "ring0",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "static",
+    "note": "待機中は止まっている"
+   },
+   "ctlText": "{\"kind\":\"static\",\"note\":\"待機中は止まっている\"}",
+   "frames": [
+    {
+     "file": "ring0.png",
+     "t": 0,
+     "x": -109.33333333333334,
+     "y": -78.66666666666667,
+     "w": 299,
+     "h": 301
+    }
+   ]
+  },
+  {
+   "name": "ring1",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "static",
+    "note": "待機中は止まっている"
+   },
+   "ctlText": "{\"kind\":\"static\",\"note\":\"待機中は止まっている\"}",
+   "frames": [
+    {
+     "file": "ring1.png",
+     "t": 0,
+     "x": -85.66666666666666,
+     "y": -62.33333333333333,
+     "w": 217,
+     "h": 216
+    }
+   ]
+  },
+  {
+   "name": "ring2",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "static",
+    "note": "待機中は止まっている"
+   },
+   "ctlText": "{\"kind\":\"static\",\"note\":\"待機中は止まっている\"}",
+   "frames": [
+    {
+     "file": "ring2.png",
+     "t": 0,
+     "x": -64.33333333333334,
+     "y": -48.66666666666667,
+     "w": 146,
+     "h": 146
+    }
+   ]
+  },
+  {
+   "name": "core",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "core.png",
+     "t": 0,
+     "x": -70.66666666666666,
+     "y": -39.66666666666666,
+     "w": 67,
+     "h": 67
+    }
+   ]
+  },
+  {
+   "name": "core-glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": null,
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "core-glow.png",
+     "t": 0,
+     "x": -71.66666666666666,
+     "y": -40.33333333333334,
+     "w": 72,
+     "h": 72
+    }
+   ]
+  },
+  {
+   "name": "soil",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "soil.png",
+     "t": 0,
+     "x": -76,
+     "y": -10,
+     "w": 660,
+     "h": 84
+    }
+   ]
+  }
+ ]
+}

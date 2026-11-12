@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d923d6ac24e255b40a608c8507818ba6, type: 3}
+  m_Name: AI2
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: d6fbf7503e6c4bdb845e67c43920e74d
+    Requires:
+    - ID: 98933c9860974a3e92d2aa944e7307ec
+    Effects:
+    - rid: 926390059841058266
+    Talks: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 926390059841058266
+      type: {class: BotLimitEffect, ns: Scrapwalker.Core.Outpost.Upgrades, asm: Scrapwalker.Core}
+      data:
+        Limit: 10

@@ -1,0 +1,28 @@
+{
+ "name": "item/pbelt",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -12,
+     "y": -16.142857142857146,
+     "w": 168,
+     "h": 113
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+.blackout {
+    background-color: rgb(0, 0, 0);
+}
+
+.defeat__field {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: var(--top-height);
+    bottom: var(--bottom-height);
+    align-items: center;
+    justify-content: center;
+}
+
+.defeat__band {
+    align-self: stretch;
+    height: 118px;
+    align-items: center;
+    justify-content: center;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-color: var(--c-warn);
+    background-color: rgb(8, 9, 8);
+}
+
+.defeat__text {
+    font-size: 44px;
+    -unity-font-style: bold;
+    color: var(--c-warn);
+}

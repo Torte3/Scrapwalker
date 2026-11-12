@@ -1,0 +1,28 @@
+{
+ "name": "drop/chip",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -8.714285714285715,
+     "y": -1.1428571428571423,
+     "w": 122,
+     "h": 47
+    }
+   ]
+  }
+ ]
+}

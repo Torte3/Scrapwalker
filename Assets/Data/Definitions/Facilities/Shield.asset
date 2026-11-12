@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 9f94d202770e424e8850d41a6f86408f
+    Width: 1
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 6
+    - TypeReference:
+        ID: 7f2e26054a3843808f9a3c76f69beadb
+      Count: 2
+    Recipes:
+    - ID: 18f027a0-98f4-4181-a626-4e0c46fdd848
+      Inputs:
+      - TypeReference:
+          ID: 6b5e469fd0874a0f93b980fc66052c6b
+        Count: 4
+      - TypeReference:
+          ID: 7f2e26054a3843808f9a3c76f69beadb
+        Count: 1
+      Source:
+        rid: 1995909462784572964
+      Result:
+        rid: 3442666604710875139
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    - ID: 0277cc51-546b-48a2-b8b4-6fffdaeb3f0a
+      Inputs:
+      - TypeReference:
+          ID: 169b0e8e64c4402ea39e46d9c6abf60b
+        Count: 4
+      - TypeReference:
+          ID: 7f2e26054a3843808f9a3c76f69beadb
+        Count: 2
+      Source:
+        rid: 3677729122779419673
+      Result:
+        rid: 4658315465351225091
+      Seconds: 10
+      Energy: 0
+      Requires:
+      - rid: 7581668544084327535
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: 97118b9dd86143d984c7ea2c891cecc8
+    IsIndestructible: 1
+    Stats:
+    - Stat: 1
+      Amount: 100
+    Roles: []
+  _name: "\u30B7\u30FC\u30EB\u30C9"
+  _recipes:
+  - _recipe: 18f027a0-98f4-4181-a626-4e0c46fdd848
+    _name: "\u5F37\u53161"
+  - _recipe: 0277cc51-546b-48a2-b8b4-6fffdaeb3f0a
+    _name: "\u5F37\u53162"
+  _look:
+    _category: 3
+    _act:
+      rid: 3007974044872378183
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: -2
+    _idle: {fileID: -5302487893555527430, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: 5187760662032430569, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: -2444080512407419032, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1995909462784572964
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3442666604710875139
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 1
+          Amount: 50
+    - rid: 3677729122779419673
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 4658315465351225091
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 1
+          Amount: 50
+    - rid: 7581668544084327535
+      type: {class: PreviousRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        Recipe: 18f027a0-98f4-4181-a626-4e0c46fdd848
+    - rid: 3007974044872378183
+      type: {class: ActWhileOperational, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

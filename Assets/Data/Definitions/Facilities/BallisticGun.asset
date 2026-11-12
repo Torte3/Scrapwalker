@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: BallisticGun
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 148e44f28bf14141bbe2487c70a567a9
+    Width: 2
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: 22712f6ef7bf410f9692e2a2c35cde30
+      Count: 1
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 2
+    Recipes:
+    - ID: 3eeeb3c0-47bd-4e48-99eb-366d5de7b95b
+      Inputs:
+      - TypeReference:
+          ID: 6aea9076716a481bb142af85eeca1638
+        Count: 1
+      Source:
+        rid: 3668072363772177119
+      Result:
+        rid: 2453677343350826557
+      Seconds: 0.5
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 1
+      IsUnmanned: 0
+    - ID: d2db9299-d1e8-41ba-82ae-66617b21822c
+      Inputs:
+      - TypeReference:
+          ID: 3d11544daf990e44b961cd8ccd070e7a
+        Count: 1
+      Source:
+        rid: 1974194982905863248
+      Result:
+        rid: 3030353439649486998
+      Seconds: 0.5
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 1
+      IsUnmanned: 0
+    - ID: e33fcca6-6c2a-4ff5-93e9-b4ad86719d9f
+      Inputs:
+      - TypeReference:
+          ID: a99073c6046e752499460a2d5cd6aac5
+        Count: 1
+      Source:
+        rid: 1137788009932213891
+      Result:
+        rid: 1895118685149830625
+      Seconds: 0.5
+      Energy: 0
+      Requires: []
+      IsOneOff: 0
+      When: 1
+      IsUnmanned: 0
+    - ID: 9a63ce65-f01a-4685-b180-1089777edc35
+      Inputs:
+      - TypeReference:
+          ID: 169b0e8e64c4402ea39e46d9c6abf60b
+        Count: 2
+      Source:
+        rid: 3095821872817188652
+      Result:
+        rid: 1925146842552648744
+      Seconds: 10
+      Energy: 0
+      Requires: []
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    - ID: f1fc093d-9b6b-48b7-aa19-902b1ccd0b04
+      Inputs:
+      - TypeReference:
+          ID: 169b0e8e64c4402ea39e46d9c6abf60b
+        Count: 2
+      - TypeReference:
+          ID: 0a3c766ca518493eb001434151eb24be
+        Count: 1
+      Source:
+        rid: 2818710133668791458
+      Result:
+        rid: 3431534531186129820
+      Seconds: 10
+      Energy: 0
+      Requires:
+      - rid: 3596799573489577125
+      IsOneOff: 1
+      When: 0
+      IsUnmanned: 0
+    UnlockedBy:
+      ResearchReference:
+        ID: a2ad2757d5844fa3bcae844b83b39b21
+    IsIndestructible: 0
+    Stats: []
+    Roles:
+    - rid: 2173924343473726646
+  _name: "\u30DE\u30B7\u30F3\u30AC\u30F3"
+  _recipes:
+  - _recipe: 3eeeb3c0-47bd-4e48-99eb-366d5de7b95b
+    _name: "\u5C04\u6483\u30FB\u901A\u5E38\u5F3E"
+  - _recipe: d2db9299-d1e8-41ba-82ae-66617b21822c
+    _name: "\u5C04\u6483\u30FB\u5FB9\u7532\u5F3E"
+  - _recipe: e33fcca6-6c2a-4ff5-93e9-b4ad86719d9f
+    _name: "\u5C04\u6483\u30FB\u8CAB\u901A\u5F3E"
+  - _recipe: 9a63ce65-f01a-4685-b180-1089777edc35
+    _name: "\u5A01\u529B\u306E\u5F37\u53161"
+  - _recipe: f1fc093d-9b6b-48b7-aa19-902b1ccd0b04
+    _name: "\u5A01\u529B\u306E\u5F37\u53162"
+  _look:
+    _category: 1
+    _act:
+      rid: 8377955140076880982
+    _unlabeled: 0
+    _station:
+      rid: 6337819461406226561
+    _weapon:
+      rid: 5369526070388541847
+    _gauge:
+      rid: -2
+    _idle: {fileID: -5709708808697640292, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: 1475378962109787377, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 6733276859916083137, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _damage: {fileID: 6115477401461775574, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1137788009932213891
+      type: {class: StoreInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 1895118685149830625
+      type: {class: ShotResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Shot:
+          Damage: 5
+          DamagePerUpgrade: 1
+          Radius: 1
+          Depth: 3
+          MaxTargets: 2
+          ArmorPiercing: 0
+          Knockback: 0
+          Rounds: 20
+          RoundSeconds: 0.15
+          Slow:
+            Factor: 1
+            Seconds: 0
+    - rid: 1925146842552648744
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 7
+          Amount: 1
+    - rid: 1974194982905863248
+      type: {class: StoreInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 2453677343350826557
+      type: {class: ShotResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Shot:
+          Damage: 5
+          DamagePerUpgrade: 2
+          Radius: 1
+          Depth: 0
+          MaxTargets: 1
+          ArmorPiercing: 0
+          Knockback: 0
+          Rounds: 20
+          RoundSeconds: 0.15
+          Slow:
+            Factor: 1
+            Seconds: 0
+    - rid: 2818710133668791458
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3030353439649486998
+      type: {class: ShotResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Shot:
+          Damage: 8
+          DamagePerUpgrade: 4
+          Radius: 1
+          Depth: 0
+          MaxTargets: 1
+          ArmorPiercing: 4
+          Knockback: 0
+          Rounds: 6
+          RoundSeconds: 0.15
+          Slow:
+            Factor: 1
+            Seconds: 0
+    - rid: 3095821872817188652
+      type: {class: DeliveredInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3431534531186129820
+      type: {class: StatUpgradeResult, ns: Scrapwalker.Core.Outpost.Facilities.Recipes.Results, asm: Scrapwalker.Core}
+      data:
+        Raise:
+          Stat: 7
+          Amount: 1
+    - rid: 3668072363772177119
+      type: {class: StoreInputs, ns: Scrapwalker.Core.Outpost.Facilities.Recipes, asm: Scrapwalker.Core}
+      data: 
+    - rid: 3596799573489577125
+      type: {class: PreviousRequirement, ns: Scrapwalker.Core.Outpost.Facilities.Requirements, asm: Scrapwalker.Core}
+      data:
+        Recipe: 9a63ce65-f01a-4685-b180-1089777edc35
+    - rid: 2173924343473726646
+      type: {class: WeaponRole, ns: Scrapwalker.Core.Outpost.Roles, asm: Scrapwalker.Core}
+      data:
+        Barrel:
+          ShotCellsPerSecond: 120
+          ShareOfWidth: 0.95
+        AutoRepeat: 3eeeb3c0-47bd-4e48-99eb-366d5de7b95b
+    - rid: 6337819461406226561
+      type: {class: StationLook, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _dx: -40
+        _onDeck: 0
+    - rid: 5369526070388541847
+      type: {class: WeaponLook, ns: Scrapwalker.Game.Definitions, asm: Scrapwalker.Game}
+      data:
+        _recoilFrames: 6
+        _shot:
+          _flight:
+            rid: 7206476877570600128
+          _muzzleAnchorY: 0.5
+          _muzzleOffsetY: 6
+          _hitHeight: 18
+          _muzzle:
+            _count: 6
+            _vxMin: 0
+            _vxMax: 3
+            _vyMin: -1
+            _vyMax: 1
+            _lifeFrames: 10
+            _color: {r: 0.9490196, g: 0.8862745, b: 0.4784314, a: 1}
+            _size: 2
+            _gravity: 0
+          _hit:
+            _count: 5
+            _vxMin: -1.5
+            _vxMax: 1.5
+            _vyMin: -2
+            _vyMax: 0
+            _lifeFrames: 12
+            _color: {r: 0.9490196, g: 0.7882353, b: 0.2980392, a: 1}
+            _size: 2
+            _gravity: 0.1
+        _fire: {fileID: -4888910354406623642, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+        _sounds:
+          _fire:
+            _clip: {fileID: 0}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _firing:
+            _loop:
+              _clip: {fileID: 8300000, guid: d4890d5148f3438c8b6ed8c1f3b6921b, type: 3}
+              _volumeDecibels: 0
+              _pitchJitter: 0
+              _maxVoices: 0
+            _accent:
+              _clip: {fileID: 0}
+              _volumeDecibels: 0
+              _pitchJitter: 0
+              _maxVoices: 0
+            _accentMinSeconds: 0
+            _accentMaxSeconds: 0
+          _firingHoldSeconds: 0.7
+          _land:
+            _clip: {fileID: 0}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+    - rid: 8377955140076880982
+      type: {class: ActWhileWorking, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: 7206476877570600128
+      type: {class: TracerFlight, ns: Scrapwalker.Game.Definitions.Flights, asm: Scrapwalker.Game}
+      data:
+        _color: {r: 0.9490196, g: 0.7882353, b: 0.29803923, a: 1}
+    - rid: -2
+      type: {class: , ns: , asm: }

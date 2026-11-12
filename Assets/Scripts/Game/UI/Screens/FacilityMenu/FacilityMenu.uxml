@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="FacilityMenu.uss" />
+    <ui:VisualElement name="room-menu-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="room-menu" class="room-menu hidden">
+            <ui:Button name="choice-0" class="btn room-menu__choice">
+                <ui:Label name="choice-label" class="room-menu__label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="choice-1" class="btn room-menu__choice">
+                <ui:Label name="choice-label" class="room-menu__label" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

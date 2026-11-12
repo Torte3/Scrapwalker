@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="TickerItem" src="TickerItem.uxml" />
+    <Style src="Ticker.uss" />
+    <ui:VisualElement name="ticker-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="ticker" class="ticker hidden" picking-mode="Ignore">
+            <ui:Instance template="TickerItem" name="ticker-item-template" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f136346bd64439a8b28dc5d995216f7, type: 3}
+  m_Name: SolarPanel
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: e79028bd726e47e98d2492a6fada046b
+    Width: 2
+    Height: 1
+    Cost:
+    - TypeReference:
+        ID: 2de85487e8f64ab98a4258ac97b2ba19
+      Count: 4
+    - TypeReference:
+        ID: caef98619db145a0aee4dc5ac85b9b67
+      Count: 4
+    - TypeReference:
+        ID: 6b5e469fd0874a0f93b980fc66052c6b
+      Count: 4
+    Recipes: []
+    UnlockedBy:
+      ResearchReference:
+        ID: 5fdcdb2d8aa34123a20d9f22c791b45f
+    IsIndestructible: 0
+    Stats:
+    - Stat: 5
+      Amount: 2
+    Roles: []
+  _name: "\u30BD\u30FC\u30E9\u30FC\u30D1\u30CD\u30EB"
+  _recipes: []
+  _look:
+    _category: 2
+    _act:
+      rid: 5840192511042640877
+    _unlabeled: 0
+    _station:
+      rid: -2
+    _weapon:
+      rid: -2
+    _gauge:
+      rid: -2
+    _idle: {fileID: -7903106975300930565, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _layers: {fileID: -4774531996248841112, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _wake: {fileID: 0}
+    _botLayer: {fileID: 0}
+    _damage: {fileID: 6115477401461775574, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 5840192511042640877
+      type: {class: ActWhileOperational, ns: Scrapwalker.Game.Definitions.Acts, asm: Scrapwalker.Game}
+      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }

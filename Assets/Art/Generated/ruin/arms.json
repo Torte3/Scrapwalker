@@ -1,0 +1,45 @@
+{
+ "name": "ruin/arms",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 700,
+     "y": 142,
+     "w": 2130,
+     "h": 1674
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "front.png",
+     "t": 0,
+     "x": 821.6666666666666,
+     "y": 480.6666666666667,
+     "w": 118,
+     "h": 115
+    }
+   ]
+  }
+ ]
+}

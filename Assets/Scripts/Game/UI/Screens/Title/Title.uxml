@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Title.uss" />
+    <ui:VisualElement name="title" class="layer title hidden" picking-mode="Ignore">
+        <ui:VisualElement name="title-vignette" class="title__vignette" picking-mode="Ignore" />
+        <ui:VisualElement class="title__column" picking-mode="Ignore">
+            <ui:VisualElement name="title-logo" class="title__logo" picking-mode="Ignore" />
+            <ui:Button name="continue" class="btn title__btn">
+                <ui:Label name="continue-label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="load" class="btn title__btn">
+                <ui:Label name="load-label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="new-game" class="btn title__btn">
+                <ui:Label name="new-game-label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="quit" class="btn title__btn">
+                <ui:Label name="quit-label" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

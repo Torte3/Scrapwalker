@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Template name="WaveBanner" src="Screens/WaveBanner/WaveBanner.uxml" />
+    <ui:Template name="EdgeHint" src="Screens/EdgeHint/EdgeHint.uxml" />
+    <ui:Template name="Ticker" src="Screens/Ticker/Ticker.uxml" />
+    <ui:Template name="TopBar" src="Screens/TopBar/TopBar.uxml" />
+    <ui:Template name="Operations" src="Screens/Operations/Operations.uxml" />
+    <ui:Template name="BuildList" src="Screens/BuildList/BuildList.uxml" />
+    <ui:Template name="SidePanel" src="Screens/SidePanel/SidePanel.uxml" />
+    <ui:Template name="FacilityPanel" src="Screens/FacilityPanel/FacilityPanel.uxml" />
+    <ui:Template name="Route" src="Screens/Route/Route.uxml" />
+    <ui:Template name="Title" src="Screens/Title/Title.uxml" />
+    <ui:Template name="Save" src="Screens/Save/Save.uxml" />
+    <ui:Template name="Clear" src="Screens/Clear/Clear.uxml" />
+    <ui:Template name="Placing" src="Screens/Placing/Placing.uxml" />
+    <ui:Template name="BuildTape" src="Screens/BuildList/BuildTape.uxml" />
+    <ui:Template name="FacilityMenu" src="Screens/FacilityMenu/FacilityMenu.uxml" />
+    <ui:Template name="Tutorial" src="Screens/Tutorial/Tutorial.uxml" />
+    <ui:Template name="Blackout" src="Screens/Fade/Blackout.uxml" />
+    <ui:VisualElement name="hud" class="layer" picking-mode="Ignore">
+        <ui:Instance template="WaveBanner" name="wave-banner-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="EdgeHint" name="edge-hint-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Ticker" name="ticker-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="TopBar" name="top-bar-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Operations" name="operations-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="BuildList" name="build-list-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="SidePanel" name="side-panel-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="FacilityPanel" name="room-panel-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Route" name="route" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Title" name="title-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Clear" name="clear-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Save" name="save-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Placing" name="placing-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="BuildTape" name="build-tape-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="FacilityMenu" name="room-menu-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Tutorial" name="tutorial-screen" class="layer" picking-mode="Ignore" />
+        <ui:Instance template="Blackout" name="blackout-screen" class="layer" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

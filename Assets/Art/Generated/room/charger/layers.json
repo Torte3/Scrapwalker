@@ -1,0 +1,180 @@
+{
+ "name": "room/charger/layers",
+ "scale": 7,
+ "origin": [
+  54,
+  618
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "base",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "base.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 378,
+     "h": 378
+    }
+   ]
+  },
+  {
+   "name": "base-active",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act",
+    "replaces": "base"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\",\"replaces\":\"base\"}",
+   "frames": [
+    {
+     "file": "base-active.png",
+     "t": 0,
+     "x": 2,
+     "y": 2,
+     "w": 378,
+     "h": 447
+    }
+   ]
+  },
+  {
+   "name": "leds",
+   "anim": {
+    "mode": "value",
+    "values": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "ctl": {
+    "kind": "value",
+    "of": "充電中のボットのバッテリー残量 × 4 を切り上げ"
+   },
+   "ctlText": "{\"kind\":\"value\",\"of\":\"充電中のボットのバッテリー残量 × 4 を切り上げ\"}",
+   "frames": [
+    {
+     "file": "leds_0.png",
+     "t": 0,
+     "v": 0,
+     "x": 45,
+     "y": 22,
+     "w": 21,
+     "h": 168
+    },
+    {
+     "file": "leds_1.png",
+     "t": 0,
+     "v": 1,
+     "x": 41.57142857142857,
+     "y": 22,
+     "w": 69,
+     "h": 192
+    },
+    {
+     "file": "leds_2.png",
+     "t": 0,
+     "v": 2,
+     "x": 41.57142857142857,
+     "y": 22,
+     "w": 69,
+     "h": 192
+    },
+    {
+     "file": "leds_3.png",
+     "t": 0,
+     "v": 3,
+     "x": 41.57142857142857,
+     "y": 22,
+     "w": 69,
+     "h": 192
+    },
+    {
+     "file": "leds_4.png",
+     "t": 0,
+     "v": 4,
+     "x": 41.57142857142857,
+     "y": 18.571428571428555,
+     "w": 69,
+     "h": 216
+    }
+   ]
+  },
+  {
+   "name": "bot",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act",
+    "tint": "lowpower"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\",\"tint\":\"lowpower\"}",
+   "frames": [
+    {
+     "file": "bot.png",
+     "t": 0,
+     "x": 16.14285714285714,
+     "y": 26.428571428571445,
+     "w": 117,
+     "h": 171
+    }
+   ]
+  },
+  {
+   "name": "arm-front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\"}",
+   "frames": [
+    {
+     "file": "arm-front.png",
+     "t": 0,
+     "x": 29,
+     "y": 14.714285714285666,
+     "w": 114,
+     "h": 195
+    }
+   ]
+  },
+  {
+   "name": "arm-glow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "when": "act"
+   },
+   "ctlText": "{\"kind\":\"state\",\"when\":\"act\"}",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "arm-glow.png",
+     "t": 0,
+     "x": 23,
+     "y": 32,
+     "w": 112,
+     "h": 112
+    }
+   ]
+  }
+ ]
+}

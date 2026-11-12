@@ -1,0 +1,25 @@
+{
+    "name": "Scrapwalker",
+    "maps": [
+        {
+            "name": "Game",
+            "id": "457c58b2-e6d5-48ba-b247-5821a4184153",
+            "actions": [
+                { "name": "Point", "type": "PassThrough", "id": "219a950e-f0d8-4988-91ae-c49496ff9ed2", "expectedControlType": "Vector2", "processors": "", "interactions": "", "initialStateCheck": true },
+                { "name": "Click", "type": "Button", "id": "21227b5e-6b1c-470b-9b03-6f20f114d8ff", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "Back", "type": "Button", "id": "4627746f-659b-4a64-ab5e-30e7752a502b", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": false },
+                { "name": "KeepPlacing", "type": "Button", "id": "48fcee33-db48-47d6-8fbc-8c7843fa9de5", "expectedControlType": "Button", "processors": "", "interactions": "", "initialStateCheck": true },
+                { "name": "Scroll", "type": "PassThrough", "id": "91f8fb59-7538-4732-b0b2-6ca0fa4a9863", "expectedControlType": "Vector2", "processors": "", "interactions": "", "initialStateCheck": false }
+            ],
+            "bindings": [
+                { "name": "", "id": "cb885bf6-d10e-44cc-8b56-2893bebf0061", "path": "<Mouse>/position", "interactions": "", "processors": "", "groups": "", "action": "Point", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "5bf7a46e-0335-4ec8-87e0-e78d208f1406", "path": "<Mouse>/leftButton", "interactions": "", "processors": "", "groups": "", "action": "Click", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "b87e2b35-b4d3-4ff8-b42e-fd6732aee88e", "path": "<Mouse>/rightButton", "interactions": "", "processors": "", "groups": "", "action": "Back", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "3807e53b-df42-41b1-8092-bfab009a65dd", "path": "<Keyboard>/escape", "interactions": "", "processors": "", "groups": "", "action": "Back", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "04c9ee2b-e467-49fd-aa5e-34cd69ef0256", "path": "<Keyboard>/shift", "interactions": "", "processors": "", "groups": "", "action": "KeepPlacing", "isComposite": false, "isPartOfComposite": false },
+                { "name": "", "id": "72f0d734-5b21-435c-acb0-97f4e421e6f4", "path": "<Mouse>/scroll", "interactions": "", "processors": "", "groups": "", "action": "Scroll", "isComposite": false, "isPartOfComposite": false }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

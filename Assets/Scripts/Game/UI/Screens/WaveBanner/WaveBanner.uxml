@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="WaveBanner.uss" />
+    <ui:VisualElement name="wave-banner-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="wave-banner" class="wave-banner hidden" picking-mode="Ignore">
+            <ui:VisualElement name="edge-glow" class="wave-banner__warn-only wave-banner__edge-glow" picking-mode="Ignore">
+                <ui:VisualElement class="wave-banner__glow-side wave-banner__glow-side--left" picking-mode="Ignore">
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--0" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--1" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--2" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--3" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--4" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--left wave-banner__glow--5" picking-mode="Ignore" />
+            </ui:VisualElement>
+                <ui:VisualElement class="wave-banner__glow-side wave-banner__glow-side--right" picking-mode="Ignore">
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--0" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--1" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--2" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--3" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--4" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--right wave-banner__glow--5" picking-mode="Ignore" />
+            </ui:VisualElement>
+                <ui:VisualElement class="wave-banner__glow-side wave-banner__glow-side--top" picking-mode="Ignore">
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--0" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--1" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--2" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--3" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--4" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--top wave-banner__glow--5" picking-mode="Ignore" />
+            </ui:VisualElement>
+                <ui:VisualElement class="wave-banner__glow-side wave-banner__glow-side--bottom" picking-mode="Ignore">
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--0" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--1" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--2" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--3" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--4" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__glow wave-banner__glow--bottom wave-banner__glow--5" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="wave-banner__hazard wave-banner__warn-only wave-banner__hazard--edge-top" picking-mode="Ignore">
+                <ui:VisualElement name="edge-top-stripes" class="wave-banner__stripes" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="wave-banner__hazard wave-banner__warn-only wave-banner__hazard--edge-bottom" picking-mode="Ignore">
+                <ui:VisualElement name="edge-bottom-stripes" class="wave-banner__stripes" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="wave-banner__center" picking-mode="Ignore">
+                <ui:VisualElement name="band" class="wave-banner__band-group" picking-mode="Ignore">
+                    <ui:VisualElement class="wave-banner__band" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__hazard wave-banner__warn-only wave-banner__hazard--band-top" picking-mode="Ignore">
+                <ui:VisualElement name="band-top-stripes" class="wave-banner__stripes" picking-mode="Ignore" />
+            </ui:VisualElement>
+                    <ui:VisualElement class="wave-banner__hazard wave-banner__warn-only wave-banner__hazard--band-bottom" picking-mode="Ignore">
+                <ui:VisualElement name="band-bottom-stripes" class="wave-banner__stripes" picking-mode="Ignore" />
+            </ui:VisualElement>
+                    <ui:VisualElement class="wave-banner__calm-only wave-banner__line wave-banner__line--top" picking-mode="Ignore" />
+                    <ui:VisualElement class="wave-banner__calm-only wave-banner__line wave-banner__line--bottom" picking-mode="Ignore" />
+                    <ui:VisualElement name="charge" class="wave-banner__launch-only wave-banner__charge" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement name="texts" class="wave-banner__texts" picking-mode="Ignore">
+                    <ui:Label name="label" class="wave-banner__label nowrap" picking-mode="Ignore" />
+                    <ui:Label name="title" class="wave-banner__title nowrap" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

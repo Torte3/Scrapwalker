@@ -1,0 +1,265 @@
+{
+ "name": "base/arm",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "cyl-rod",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "span",
+    "anchor": "end",
+    "at": [
+     58,
+     16,
+     -22,
+     0
+    ],
+    "note": "原点を先の留め具に置き、根元の留め具の向きへ。at＝先の留め具：上腕を起こす（上腕の上）・前腕を動かす（前腕の上）"
+   },
+   "ctlText": "{\"kind\":\"span\",\"anchor\":\"end\",\"at\":[58,16,-22,0],\"note\":\"原点を先の留め具に置き、根元の留め具の向きへ。at＝先の留め具：上腕を起こす（上腕の上）・前腕を動かす（前腕の上）\"}",
+   "frames": [
+    {
+     "file": "cyl-rod.png",
+     "t": 0,
+     "x": -54.666666666666664,
+     "y": -5.666666666666664,
+     "w": 181,
+     "h": 34
+    }
+   ]
+  },
+  {
+   "name": "cyl-tube",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "span",
+    "anchor": "start",
+    "at": [
+     2,
+     50,
+     34,
+     -14
+    ],
+    "note": "原点を根元の留め具に置き、先の留め具の向きへ（棒より手前）。at＝根元の留め具：上腕を起こす（肩から）・前腕を動かす（上腕の上）"
+   },
+   "ctlText": "{\"kind\":\"span\",\"anchor\":\"start\",\"at\":[2,50,34,-14],\"note\":\"原点を根元の留め具に置き、先の留め具の向きへ（棒より手前）。at＝根元の留め具：上腕を起こす（肩から）・前腕を動かす（上腕の上）\"}",
+   "frames": [
+    {
+     "file": "cyl-tube.png",
+     "t": 0,
+     "x": -6,
+     "y": -6,
+     "w": 216,
+     "h": 36
+    }
+   ]
+  },
+  {
+   "name": "fore",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "parent": "upper",
+    "at": [
+     120,
+     0
+    ],
+    "len": 112,
+    "grip": 40,
+    "angle": "a2（今の ArmState と IK）。grip＝手首から爪の先まで"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"parent\":\"upper\",\"at\":[120,0],\"len\":112,\"grip\":40,\"angle\":\"a2（今の ArmState と IK）。grip＝手首から爪の先まで\"}",
+   "frames": [
+    {
+     "file": "fore.png",
+     "t": 0,
+     "x": -26,
+     "y": -12,
+     "w": 468,
+     "h": 72
+    }
+   ]
+  },
+  {
+   "name": "bundle",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "state",
+    "parent": "fore",
+    "at": [
+     152,
+     0
+    ]
+   },
+   "ctlText": "{\"kind\":\"state\",\"parent\":\"fore\",\"at\":[152,0]}",
+   "frames": [
+    {
+     "file": "bundle.png",
+     "t": 0,
+     "x": -31.666666666666668,
+     "y": -29.333333333333332,
+     "w": 193,
+     "h": 171
+    }
+   ]
+  },
+  {
+   "name": "claw-top",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "parent": "fore",
+    "at": [
+     129,
+     -8
+    ],
+    "angle": "−(.3 + 開き×.55)"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"parent\":\"fore\",\"at\":[129,-8],\"angle\":\"−(.3 + 開き×.55)\"}",
+   "frames": [
+    {
+     "file": "claw-top.png",
+     "t": 0,
+     "x": -4,
+     "y": -4,
+     "w": 107,
+     "h": 73
+    }
+   ]
+  },
+  {
+   "name": "claw-bottom",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "parent": "fore",
+    "at": [
+     129,
+     8
+    ],
+    "angle": ".3 + 開き×.55"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"parent\":\"fore\",\"at\":[129,8],\"angle\":\".3 + 開き×.55\"}",
+   "frames": [
+    {
+     "file": "claw-bottom.png",
+     "t": 0,
+     "x": -4,
+     "y": -20.333333333333336,
+     "w": 107,
+     "h": 73
+    }
+   ]
+  },
+  {
+   "name": "hose",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "parent": "fore",
+    "at": [
+     0,
+     0
+    ]
+   },
+   "ctlText": "{\"kind\":\"follow\",\"parent\":\"fore\",\"at\":[0,0]}",
+   "frames": [
+    {
+     "file": "hose.png",
+     "t": 0,
+     "x": -2,
+     "y": 8,
+     "w": 348,
+     "h": 29
+    }
+   ]
+  },
+  {
+   "name": "upper",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "rotate",
+    "len": 120,
+    "angle": "肩 S で a1（今の ArmState と IK）"
+   },
+   "ctlText": "{\"kind\":\"rotate\",\"len\":120,\"angle\":\"肩 S で a1（今の ArmState と IK）\"}",
+   "frames": [
+    {
+     "file": "upper.png",
+     "t": 0,
+     "x": -8,
+     "y": -17,
+     "w": 384,
+     "h": 102
+    }
+   ]
+  },
+  {
+   "name": "pin-shoulder",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "note": "肩 S"
+   },
+   "ctlText": "{\"kind\":\"follow\",\"note\":\"肩 S\"}",
+   "frames": [
+    {
+     "file": "pin-shoulder.png",
+     "t": 0,
+     "x": -12,
+     "y": -12,
+     "w": 72,
+     "h": 72
+    }
+   ]
+  },
+  {
+   "name": "pin-elbow",
+   "anim": {
+    "mode": "static"
+   },
+   "ctl": {
+    "kind": "follow",
+    "parent": "upper",
+    "at": [
+     120,
+     0
+    ]
+   },
+   "ctlText": "{\"kind\":\"follow\",\"parent\":\"upper\",\"at\":[120,0]}",
+   "frames": [
+    {
+     "file": "pin-elbow.png",
+     "t": 0,
+     "x": -11,
+     "y": -11,
+     "w": 66,
+     "h": 66
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:ScrollView name="queue" class="room-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden">
+        <ui:VisualElement class="room-stack-6">
+            <ui:VisualElement class="section">
+                <ui:VisualElement class="section__mark" />
+                <ui:Label name="queue-title" class="section__title nowrap" />
+            </ui:VisualElement>
+            <ui:VisualElement name="order-rows" class="room-stack-6 room-flat" />
+            <ui:Label name="queue-empty" class="room-note" />
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

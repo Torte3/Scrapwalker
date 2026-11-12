@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement class="side-bot-row">
+        <ui:VisualElement class="side-bot-row__line">
+            <ui:Label name="id" class="side-bot-row__id bold nowrap" />
+            <ui:Label name="place" class="side-bot-row__place bold nowrap" />
+            <ui:VisualElement name="battery" class="bar side-bot-row__battery">
+                <ui:VisualElement name="battery-fill" class="bar__fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="side-bot-row__line side-bot-row__indent">
+            <ui:Label name="job" class="side-bot-row__job nowrap" />
+            <ui:Label name="heading" class="side-bot-row__tag cyan nowrap" />
+            <ui:Label name="lost" class="side-bot-row__tag warn nowrap" />
+            <ui:VisualElement class="side-bot-row__spacer" />
+            <ui:Label name="cargo" class="side-bot-row__cargo nowrap" />
+        </ui:VisualElement>
+        <ui:VisualElement class="side-bot-row__indent">
+            <ui:VisualElement name="progress" class="bar side-bot-row__bar job-bar">
+                <ui:VisualElement class="bar__fill job-bar__ready" />
+                <ui:VisualElement class="bar__fill job-bar__progress" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

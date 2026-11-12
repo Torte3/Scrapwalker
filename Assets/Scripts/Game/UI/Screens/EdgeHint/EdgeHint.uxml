@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="EdgeHint.uss" />
+    <ui:VisualElement name="edge-hint-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="edge-hint" class="edge-hint" picking-mode="Ignore">
+            <ui:VisualElement name="left" class="edge-hint__side edge-hint__side--left invisible" picking-mode="Ignore">
+                <ui:VisualElement name="left-fade" class="edge-hint__fade" picking-mode="Ignore" />
+                <ui:VisualElement name="left-chevron-0" class="edge-hint__chevron" picking-mode="Ignore">
+                    <ui:VisualElement name="left-stroke-0-a" class="edge-hint__stroke edge-hint__stroke--left-up" picking-mode="Ignore" />
+                    <ui:VisualElement name="left-stroke-0-b" class="edge-hint__stroke edge-hint__stroke--left-down" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement name="left-chevron-1" class="edge-hint__chevron" picking-mode="Ignore">
+                    <ui:VisualElement name="left-stroke-1-a" class="edge-hint__stroke edge-hint__stroke--left-up" picking-mode="Ignore" />
+                    <ui:VisualElement name="left-stroke-1-b" class="edge-hint__stroke edge-hint__stroke--left-down" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="right" class="edge-hint__side edge-hint__side--right invisible" picking-mode="Ignore">
+                <ui:VisualElement name="right-fade" class="edge-hint__fade" picking-mode="Ignore" />
+                <ui:VisualElement name="right-chevron-0" class="edge-hint__chevron" picking-mode="Ignore">
+                    <ui:VisualElement name="right-stroke-0-a" class="edge-hint__stroke edge-hint__stroke--right-up" picking-mode="Ignore" />
+                    <ui:VisualElement name="right-stroke-0-b" class="edge-hint__stroke edge-hint__stroke--right-down" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:VisualElement name="right-chevron-1" class="edge-hint__chevron" picking-mode="Ignore">
+                    <ui:VisualElement name="right-stroke-1-a" class="edge-hint__stroke edge-hint__stroke--right-up" picking-mode="Ignore" />
+                    <ui:VisualElement name="right-stroke-1-b" class="edge-hint__stroke edge-hint__stroke--right-down" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="QualityFilter.uss" />
+    <ui:VisualElement name="quality-filter" class="quality-filter">
+        <ui:VisualElement class="quality-filter__head">
+            <ui:Label name="quality-filter-range-key" class="quality-filter__key nowrap" />
+            <ui:Label name="quality-filter-summary" class="quality-filter__summary nowrap" />
+        </ui:VisualElement>
+        <ui:VisualElement name="quality-filter-range" class="quality-range">
+            <ui:VisualElement class="quality-range__cell" picking-mode="Ignore">
+                <ui:VisualElement class="quality-range__edge quality-range__edge--low" picking-mode="Ignore" />
+                <ui:VisualElement class="quality-range__edge quality-range__edge--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-range__cell" picking-mode="Ignore">
+                <ui:VisualElement class="quality-range__edge quality-range__edge--low" picking-mode="Ignore" />
+                <ui:VisualElement class="quality-range__edge quality-range__edge--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-range__cell" picking-mode="Ignore">
+                <ui:VisualElement class="quality-range__edge quality-range__edge--low" picking-mode="Ignore" />
+                <ui:VisualElement class="quality-range__edge quality-range__edge--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-range__cell" picking-mode="Ignore">
+                <ui:VisualElement class="quality-range__edge quality-range__edge--low" picking-mode="Ignore" />
+                <ui:VisualElement class="quality-range__edge quality-range__edge--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="quality-range__cell" picking-mode="Ignore">
+                <ui:VisualElement class="quality-range__edge quality-range__edge--low" picking-mode="Ignore" />
+                <ui:VisualElement class="quality-range__edge quality-range__edge--high" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="quality-filter__ticks">
+            <ui:Label class="quality-filter__tick nowrap" />
+            <ui:Label class="quality-filter__tick nowrap" />
+            <ui:Label class="quality-filter__tick nowrap" />
+            <ui:Label class="quality-filter__tick nowrap" />
+            <ui:Label class="quality-filter__tick nowrap" />
+        </ui:VisualElement>
+        <ui:Label name="quality-filter-order-key" class="quality-filter__key nowrap" />
+        <ui:VisualElement class="quality-filter__order">
+            <ui:Button name="quality-filter-low-first" class="btn quality-filter__order-button quality-filter__order-button--low">
+                <ui:VisualElement class="icon icon--tri-right quality-filter__order-icon" picking-mode="Ignore" />
+                <ui:Label name="quality-filter-low-first-label" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="quality-filter-high-first" class="btn quality-filter__order-button">
+                <ui:VisualElement class="icon icon--tri-left quality-filter__order-icon" picking-mode="Ignore" />
+                <ui:Label name="quality-filter-high-first-label" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,28 @@
+{
+ "name": "item/fuelrod",
+ "scale": 7,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": -4,
+     "y": -24,
+     "w": 56,
+     "h": 168
+    }
+   ]
+  }
+ ]
+}

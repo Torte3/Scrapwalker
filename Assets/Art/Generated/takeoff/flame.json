@@ -1,0 +1,29 @@
+{
+ "name": "takeoff/flame",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "all",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "blend": "add",
+   "frames": [
+    {
+     "file": "all.png",
+     "t": 0,
+     "x": 0,
+     "y": -22.666666666666664,
+     "w": 299,
+     "h": 136
+    }
+   ]
+  }
+ ]
+}

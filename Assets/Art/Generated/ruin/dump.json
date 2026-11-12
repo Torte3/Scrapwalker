@@ -1,0 +1,45 @@
+{
+ "name": "ruin/dump",
+ "scale": 3,
+ "origin": [
+  0,
+  0
+ ],
+ "clock": "T",
+ "layers": [
+  {
+   "name": "back",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "back.png",
+     "t": 0,
+     "x": 740,
+     "y": 183.33333333333334,
+     "w": 2150,
+     "h": 1512
+    }
+   ]
+  },
+  {
+   "name": "front",
+   "anim": {
+    "mode": "static"
+   },
+   "ctlText": "",
+   "frames": [
+    {
+     "file": "front.png",
+     "t": 0,
+     "x": 828,
+     "y": 497.6666666666667,
+     "w": 93,
+     "h": 111
+    }
+   ]
+  }
+ ]
+}

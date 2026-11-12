@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: RocketCarrier
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: a33e859ca1d4453ea1f4cba58e919652
+    TypeReference:
+      ID: 6d14d6ac71a74bcb9598f3dd8c0186c9
+    HP: 700
+    Armor: 0
+    IsBoss: 1
+    AttackMoves:
+    - StyleReference:
+        ID: 095abb736d8af04bec571924ddfa2823
+      Shots: 18
+      HasOneTarget: 0
+      Damage: 2
+      ImpactSeconds: 1
+      GapSeconds: 0.1
+      TailSeconds: 0.2
+      RestSeconds: 3.5
+      Weight: 0
+    DropsReference:
+      ID: 10d97acce07fae846a24323b8ee21a8b
+  _look:
+    _calm: {fileID: -4067283623255864520, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: 8143198738477861927, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: 6271438356650514993, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _body: {fileID: 2221878800139730510, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}
+    - {x: -30, y: -60}
+    - {x: 20, y: -90}

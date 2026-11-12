@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: Armored2
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: 57039f10ac024646b207bbade2f63034
+    TypeReference:
+      ID: 0954cbe13a9646929ef74f9f349fddbb
+    HP: 60
+    Armor: 2
+    IsBoss: 0
+    AttackMoves:
+    - StyleReference:
+        ID: cd6a4546995c894e7d72f61f177ae195
+      Shots: 1
+      HasOneTarget: 0
+      Damage: 6
+      ImpactSeconds: 0
+      GapSeconds: 0
+      TailSeconds: 0
+      RestSeconds: 2
+      Weight: 0
+    DropsReference:
+      ID: 2bcdd6b34ed52104da3486299c54f386
+  _look:
+    _calm: {fileID: -294444214104709865, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: -5901298713067651182, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: 0}
+    _body: {fileID: -6719968819487615196, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}

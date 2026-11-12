@@ -1,0 +1,77 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="TopBar.uss" />
+    <ui:VisualElement name="top-bar-layer" class="layer" picking-mode="Ignore">
+        <ui:VisualElement name="top-bar" class="top-bar panel">
+            <ui:VisualElement name="hull-cell" class="top-bar__cell top-bar__cell--row">
+                <ui:VisualElement class="top-bar__group">
+                    <ui:VisualElement class="top-bar__head">
+                        <ui:Label name="hull-head" class="top-bar__head-text dim nowrap" />
+                        <ui:Label name="hull-value" class="top-bar__head-text top-bar__hull-value nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="top-bar__body">
+                        <ui:VisualElement class="bar top-bar__bar">
+                            <ui:VisualElement name="hull-fill" class="bar__fill top-bar__fill--amber" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="barrier-group" class="top-bar__group top-bar__group--next">
+                    <ui:VisualElement class="top-bar__head">
+                        <ui:Label name="barrier-head" class="top-bar__head-text dim nowrap" />
+                        <ui:Label name="barrier-value" class="top-bar__head-text top-bar__barrier-value nowrap" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="top-bar__body">
+                        <ui:VisualElement class="bar top-bar__bar">
+                            <ui:VisualElement name="barrier-fill" class="bar__fill top-bar__fill--barrier" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ruin-cell" class="top-bar__cell">
+                <ui:VisualElement class="top-bar__head">
+                    <ui:Label name="ruin-title" class="top-bar__head-text dim nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement class="top-bar__body">
+                    <ui:Label name="ruin-name" class="top-bar__ruin-name bold nowrap" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="wave-cell" class="top-bar__cell">
+                <ui:VisualElement class="top-bar__head">
+                    <ui:Label name="wave-title" class="top-bar__head-text top-bar__wave-title dim nowrap" />
+                    <ui:VisualElement name="wave-time" class="top-bar__wave-time">
+                        <ui:Label name="time-head" class="top-bar__head-text dim nowrap" />
+                        <ui:Label name="wave-seconds" class="top-bar__head-text top-bar__seconds nowrap" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="top-bar__body">
+                    <ui:VisualElement name="wave-squares" class="top-bar__squares">
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                        <ui:VisualElement class="top-bar__square"><ui:VisualElement class="top-bar__square-fill" /></ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="wave-gauge" class="bar top-bar__wave-gauge">
+                        <ui:VisualElement name="wave-gauge-fill" class="bar__fill top-bar__wave-gauge-fill" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="power-cell" class="top-bar__cell">
+                <ui:VisualElement class="top-bar__head">
+                    <ui:VisualElement name="power-icon" class="top-bar__power-icon" picking-mode="Ignore" />
+                    <ui:Label name="power-head" class="top-bar__head-text dim nowrap" />
+                    <ui:Label name="power-value" class="top-bar__head-text top-bar__power-value nowrap" />
+                </ui:VisualElement>
+                <ui:VisualElement class="top-bar__body">
+                    <ui:VisualElement class="bar top-bar__bar">
+                        <ui:VisualElement name="power-fill" class="bar__fill top-bar__fill--cyan" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

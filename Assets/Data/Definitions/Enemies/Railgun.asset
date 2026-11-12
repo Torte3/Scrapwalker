@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b24975ffe344dbabb957b1b47e57cc8, type: 3}
+  m_Name: Railgun
+  m_EditorClassIdentifier: 
+  _definition:
+    ID: c185f16d22ab4505a28a85f3d99f2291
+    TypeReference:
+      ID: 493c95ad9cd74ee495ae981757249b85
+    HP: 2400
+    Armor: 0
+    IsBoss: 1
+    AttackMoves:
+    - StyleReference:
+        ID: b6f1fa354d46b274f20a868746793075
+      Shots: 10
+      HasOneTarget: 1
+      Damage: 10
+      ImpactSeconds: 10
+      GapSeconds: 0.2
+      TailSeconds: 0.7
+      RestSeconds: 7
+      Weight: 0
+    DropsReference:
+      ID: 0604662cd005b93458e06fa3267c7d74
+  _look:
+    _calm: {fileID: 2001643916114402499, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _alert: {fileID: 6615326070456347168, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _attack: {fileID: -2020373678453864985, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _body: {fileID: 854400134207914611, guid: e4dc11c7a6f191c46b573a6cce116601, type: 2}
+    _booms:
+    - {x: 0, y: -20}
+    - {x: -30, y: -60}
+    - {x: 20, y: -90}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="BuildList.uss" />
+    <ui:VisualElement name="build-tape" class="layer build-tape hidden" picking-mode="Ignore">
+        <ui:VisualElement class="build-tape__edge build-tape__edge--top" picking-mode="Ignore" />
+        <ui:VisualElement class="build-tape__edge build-tape__edge--bottom" picking-mode="Ignore" />
+        <ui:VisualElement class="build-tape__edge build-tape__edge--left" picking-mode="Ignore" />
+        <ui:VisualElement class="build-tape__edge build-tape__edge--right" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>

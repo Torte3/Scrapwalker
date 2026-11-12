@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff2bac5d7dc4539ac84e634ab21481f, type: 3}
+  m_Name: SoundTable
+  m_EditorClassIdentifier: 
+  _bgmGroup: {fileID: 1358486754193349892, guid: 59aad29dad32497285df9186a2d88ee4, type: 2}
+  _seGroup: {fileID: 1204021594908873535, guid: 59aad29dad32497285df9186a2d88ee4, type: 2}
+  _volumes:
+    _entries:
+    - _key: 0
+      _value: BGMVolume
+    - _key: 1
+      _value: SEVolume
+  _channels:
+    _entries:
+    - _key: 0
+      _value:
+        _shiftedGroup: {fileID: 8152297249233423599, guid: 59aad29dad32497285df9186a2d88ee4, type: 2}
+        _pitch:
+          _first: SpeedUpPitchFirst
+          _second: SpeedUpPitchSecond
+        _rate: 1
+    - _key: 1
+      _value:
+        _shiftedGroup: {fileID: 6317029481105327741, guid: 59aad29dad32497285df9186a2d88ee4, type: 2}
+        _pitch:
+          _first: DiggingPitchFirst
+          _second: DiggingPitchSecond
+        _rate: 0.5
+  _music:
+    _entries:
+    - _key: 0
+      _value: {fileID: 8300000, guid: 2a75d86460a144a29b20667bfebcd239, type: 3}
+    - _key: 1
+      _value: {fileID: 8300000, guid: 7bf8748534c84a02b5f5025a381ef203, type: 3}
+    - _key: 4
+      _value: {fileID: 8300000, guid: c25205a5e68c411f91364a21a828129d, type: 3}
+    - _key: 5
+      _value: {fileID: 8300000, guid: 8817ca8c9c4f44ae89b631fdcd229efc, type: 3}
+    - _key: 6
+      _value: {fileID: 8300000, guid: e12c266230814e69b68794036c759795, type: 3}
+  _crossfadeSeconds: 1.5
+  _duckSeconds: 0.3
+  _ui:
+    _entries:
+    - _key: 0
+      _value:
+        _clip: {fileID: 8300000, guid: bd1b8dacc63e406583108e51cc214218, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 2
+    - _key: 1
+      _value:
+        _clip: {fileID: 8300000, guid: 7bb2ac3a3b6146418da51b8c08ae550f, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 2
+      _value:
+        _clip: {fileID: 8300000, guid: 258dc7de0f1648e4bf6a341d04174315, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 3
+      _value:
+        _clip: {fileID: 8300000, guid: 5d366e6a2d574bab9bc070c5e788060d, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 4
+      _value:
+        _clip: {fileID: 8300000, guid: 181700dc1a854e7b9fb417a5e4e57768, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 2
+    - _key: 5
+      _value:
+        _clip: {fileID: 8300000, guid: c07c032efe834df99a532a2b3a09aada, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 6
+      _value:
+        _clip: {fileID: 8300000, guid: d32e0beb44d843efa7ef68ce110b74fa, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 7
+      _value:
+        _clip: {fileID: 8300000, guid: 89fceaa409864d4bbe302dd697c9ffab, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+  _scene:
+    _entries:
+    - _key: 0
+      _value:
+        _clip: {fileID: 8300000, guid: 6cdaa26f2944434ab1ac4d01a6a66709, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 1
+      _value:
+        _clip: {fileID: 8300000, guid: 73992141cd084f319c737fa45da32288, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 2
+      _value:
+        _clip: {fileID: 8300000, guid: 4709add12a864629a6abf8b479a6ffbc, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 3
+      _value:
+        _clip: {fileID: 8300000, guid: 546cb4dd5b8f4fea931e60357c5b999a, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0.08
+        _maxVoices: 3
+    - _key: 4
+      _value:
+        _clip: {fileID: 8300000, guid: 92cf4e94245d41598d30070d6d229e54, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0.08
+        _maxVoices: 3
+    - _key: 5
+      _value:
+        _clip: {fileID: 8300000, guid: 8d413507504243ecbdf09a176ee2bd42, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 6
+      _value:
+        _clip: {fileID: 8300000, guid: b0c9701d431b483c8c368df8cc1b53ed, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 7
+      _value:
+        _clip: {fileID: 8300000, guid: 504bc7e82bb540728641d499f3dec670, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0
+        _maxVoices: 1
+    - _key: 8
+      _value:
+        _clip: {fileID: 8300000, guid: cc6c22df20e14c0dbbde6a2600142b65, type: 3}
+        _volumeDecibels: 0
+        _pitchJitter: 0.3
+        _maxVoices: 2
+  _work:
+    _entries:
+    - _key: 0
+      _value:
+        _channel: 0
+        _sound:
+          _loop:
+            _clip: {fileID: 8300000, guid: 7e171c072560441bb1ce8ab3b756cfab, type: 3}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accent:
+            _clip: {fileID: 8300000, guid: b1e2a674da714e4c9bfefd221f4eef53, type: 3}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accentMinSeconds: 1.2
+          _accentMaxSeconds: 3
+    - _key: 1
+      _value:
+        _channel: 0
+        _sound:
+          _loop:
+            _clip: {fileID: 8300000, guid: 43773985e32842d6aaa856f8a4e8c49c, type: 3}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accent:
+            _clip: {fileID: 0}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accentMinSeconds: 0
+          _accentMaxSeconds: 0
+    - _key: 2
+      _value:
+        _channel: 1
+        _sound:
+          _loop:
+            _clip: {fileID: 8300000, guid: 08213454f8014c1a885a7c7ecb0be562, type: 3}
+            _volumeDecibels: -6
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accent:
+            _clip: {fileID: 0}
+            _volumeDecibels: 0
+            _pitchJitter: 0
+            _maxVoices: 0
+          _accentMinSeconds: 0
+          _accentMaxSeconds: 0
+  _voiceMinSeconds: 0.07
